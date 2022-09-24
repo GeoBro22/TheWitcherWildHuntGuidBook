@@ -7,21 +7,27 @@
     <fragment
         android:id="@+id/navigation_map"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Map.Map"
-        android:label="Map"
+        android:label="@string/navigation_map"
         tools:layout="@layout/fragment_map" />
     <fragment
         android:id="@+id/navigation_story"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Story.Story"
-        android:label="Story"
+        android:label="@string/navigation_story"
         tools:layout="@layout/fragment_story" />
     <fragment
         android:id="@+id/navigation_items"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Items.Items"
-        android:label="Items"
+        android:label="@string/navigation_items"
         tools:layout="@layout/fragment_items" />
     <fragment
         android:id="@+id/navigation_builds"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Build.Builds"
-        android:label="Builds"
+        android:label="@string/navigation_builds"
         tools:layout="@layout/fragment_builds" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.thewitcherwildhuntguidbook.Home"
+        android:label="@string/navigation_home"
+        tools:layout="@layout/fragment_home" />
+
 </navigation>
