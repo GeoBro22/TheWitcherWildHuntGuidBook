@@ -8,26 +8,23 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.method.Touch;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.thewitcherwildhuntguidbook.R;
 
 public class Map extends Fragment {
-
-    // The position from which the swipe starts
-    private final PointF startPosition = new PointF(0.0F, 0.0F);
     // Current position when moving
     private final PointF currentPosition = new PointF(0.0F, 0.0F);
     // Difference between the current swipe position and the previous one
     private Point screenSize = new Point(0,0);
     private final PointF offset = new PointF(0.0F, 0.0F);
+    private int point;
 
 
     //Class for scale processing
@@ -68,16 +65,14 @@ public class Map extends Fragment {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 scaleGestureDetector.onTouchEvent(motionEvent);
                 scrollImageView(motionEvent);
-                switch (motionEvent.getAction()) {
-                    case MotionEvent.ACTION_UP:
-                        if(FACTOR <= 1f) {
-                            FACTOR = 1f;
-                            imageView.animate().scaleY(1f).setDuration(500);
-                            imageView.animate().scaleX(1f).setDuration(500);
-                            imageView.animate().x(0).setDuration(500);
-                            imageView.animate().y(0).setDuration(500);
-                        }
-                        break;
+                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    if (FACTOR <= 1f) {
+                        FACTOR = 1f;
+                        imageView.animate().scaleY(1f).setDuration(300);
+                        imageView.animate().scaleX(1f).setDuration(300);
+                        imageView.animate().x(0).setDuration(300);
+                        imageView.animate().y(0).setDuration(300);
+                    }
                 }
                 return true;
             }
@@ -87,21 +82,26 @@ public class Map extends Fragment {
     protected void scrollImageView(MotionEvent motionEvent) {
         switch (motionEvent.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                startPosition.set(motionEvent.getRawX(), motionEvent.getRawY());
-                currentPosition.set(startPosition);
+                point = motionEvent.getPointerId(0);
+                currentPosition.set(motionEvent.getRawX(), motionEvent.getRawY());
                 break;
             case MotionEvent.ACTION_MOVE:
-                offset.set(motionEvent.getRawX() - currentPosition.x, motionEvent.getRawY() - currentPosition.y);
-                if (imageView.getY() < -screenSize.y*(FACTOR / 1.5f) && offset.y < 0)
-                    offset.y = 0;
-                if (imageView.getX() < -screenSize.x*(FACTOR / 1.5f) && offset.x < 0)
-                    offset.x = 0;
-                if (imageView.getY() > screenSize.y*(FACTOR / 1.5f) && offset.y > 0)
-                    offset.y = 0;
-                if (imageView.getX() > screenSize.x*(FACTOR / 1.5f) && offset.x > 0)
-                    offset.x = 0;
-                imageView.setX(imageView.getX() + offset.x);
-                imageView.setY(imageView.getY() + offset.y);
+                if(point == motionEvent.getPointerId(0)) {
+                    offset.set(motionEvent.getRawX() - currentPosition.x, motionEvent.getRawY() - currentPosition.y);
+                    if (imageView.getY() < -screenSize.y * (FACTOR / 1.6f) && offset.y < 0)
+                        offset.y = 0;
+                    if (imageView.getX() < -screenSize.x * (FACTOR / 1.6f) && offset.x < 0)
+                        offset.x = 0;
+                    if (imageView.getY() > screenSize.y * (FACTOR / 1.6f) && offset.y > 0)
+                        offset.y = 0;
+                    if (imageView.getX() > screenSize.x * (FACTOR / 1.6f) && offset.x > 0)
+                        offset.x = 0;
+                    imageView.setX(imageView.getX() + offset.x);
+                    imageView.setY(imageView.getY() + offset.y);
+                }
+                else {
+                    point = motionEvent.getPointerId(0);
+                }
                 currentPosition.set(motionEvent.getRawX(), motionEvent.getRawY());
                 break;
         }
