@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frMap"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
     tools:context=".ui.Map.Map">
-
 
     <ImageView
         android:id="@+id/image_map_velen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/map_velen" />
-</FrameLayout>
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/map_velen_and_novigrad" />
+    <Spinner
+        android:id="@+id/spinner_map"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/bg_spinner"
+        android:popupBackground="@drawable/bg_spinner"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
