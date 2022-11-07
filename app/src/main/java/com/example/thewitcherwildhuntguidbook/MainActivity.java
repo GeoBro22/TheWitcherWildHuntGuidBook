@@ -1,8 +1,6 @@
 package com.example.thewitcherwildhuntguidbook;
 
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.MotionEvent;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -21,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 R.id.navigation_builds)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
