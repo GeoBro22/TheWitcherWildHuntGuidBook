@@ -15,7 +15,7 @@
         android:title="@string/navigation_home" />
     <item
         android:id="@+id/navigation_items"
-        android:icon="@drawable/ic_items1_96"
+        android:icon="@drawable/ic_items_96"
         android:title="@string/navigation_items" />
     <item
         android:id="@+id/navigation_builds"

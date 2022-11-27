@@ -15,6 +15,7 @@ import androidx.annotation.RequiresApi;
 public class MapView extends androidx.appcompat.widget.AppCompatImageView {
 
     private final ScaleGestureDetector scaleGestureDetector;
+    private boolean isAnimated = false;
     private float factor = 1f;
     private float maxScale = 8f;
     private final PointF currentPosition = new PointF(0.0f, 0.0f);
@@ -85,12 +86,7 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
     }
 
     private void setCenterPosition(MapView mapImage){
-        post(new Runnable() {
-            @Override
-            public void run() {
-                centerPosition.set(mapImage.getX(), mapImage.getY() - 20);
-            }
-        });
+        post(() -> centerPosition.set(mapImage.getX(), mapImage.getY() - 20));
     }
 
     public void scroll(MotionEvent motionEvent) {
@@ -135,43 +131,66 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
                 currentPosition.set(motionEvent.getRawX(), motionEvent.getRawY());
                 break;
             case MotionEvent.ACTION_UP:
-                if(getCurrentHeight() < 2 * screenSize.y) {
-                    if (getY() - (getCurrentHeight() / 2) < (-screenSize.y + centerPosition.y))
-                        animate().y(-screenSize.y + centerPosition.y + (getCurrentHeight() / 2)).setDuration(100);
-                    if (getY() + (getCurrentHeight() / 2) > (screenSize.y + centerPosition.y))
-                        animate().y(screenSize.y + centerPosition.y - (getCurrentHeight() / 2)).setDuration(100);
-                }
-                else {
-                    if (getY() - (getCurrentHeight() / 2) > (-screenSize.y + centerPosition.y))
-                        animate().y(-screenSize.y + centerPosition.y + (getCurrentHeight() / 2)).setDuration(100);
-                    if (getY() + (getCurrentHeight() / 2) < (screenSize.y + centerPosition.y))
-                        animate().y(screenSize.y + centerPosition.y - (getCurrentHeight() / 2)).setDuration(100);
-                }
-                if(getCurrentWidth() < 2 * screenSize.x) {
-                    if (getX() - (getCurrentWidth() / 2) < (-screenSize.x + centerPosition.x))
-                        animate().x(-screenSize.x + centerPosition.x + (getCurrentWidth() / 2)).setDuration(100);
-                    if (getX() + (getCurrentWidth() / 2) > (screenSize.x + centerPosition.x))
-                        animate().x(screenSize.x + centerPosition.x -(getCurrentWidth() / 2)).setDuration(100);
-                }
-                else {
-                    if (getX() - (getCurrentWidth() / 2) > (-screenSize.x + centerPosition.x))
-                        animate().x(-screenSize.x + centerPosition.x + (getCurrentWidth() / 2)).setDuration(100);
-                    if (getX() + (getCurrentWidth() / 2) < (screenSize.x + centerPosition.x))
-                        animate().x(screenSize.x + centerPosition.x -(getCurrentWidth() / 2)).setDuration(100);
-                }
+                checkBorders();
                 break;
+        }
+    }
+
+    private void animateY(float y) {
+        isAnimated = true;
+        animate().y(y);
+        animate().withEndAction(() -> isAnimated = false);
+    }
+
+    private void animateX(float x) {
+        isAnimated = true;
+        animate().x(x);
+        animate().withEndAction(() -> isAnimated = false);
+    }
+
+    public void checkBorders(){
+        animate().setDuration(100);
+        if(getCurrentHeight() < 2 * screenSize.y) {
+            if (getY() - (getCurrentHeight() / 2) < (-screenSize.y + centerPosition.y))
+                animateY(-screenSize.y + centerPosition.y + (getCurrentHeight() / 2));
+            else if (getY() + (getCurrentHeight() / 2) > (screenSize.y + centerPosition.y))
+                animateY(screenSize.y + centerPosition.y - (getCurrentHeight() / 2));
+        }
+        else {
+            if (getY() - (getCurrentHeight() / 2) > (-screenSize.y + centerPosition.y))
+                animateY(-screenSize.y + centerPosition.y + (getCurrentHeight() / 2));
+            else if (getY() + (getCurrentHeight() / 2) < (screenSize.y + centerPosition.y))
+                animateY(screenSize.y + centerPosition.y - (getCurrentHeight() / 2));
+        }
+        if(getCurrentWidth() < 2 * screenSize.x) {
+            if (getX() - (getCurrentWidth() / 2) < (-screenSize.x + centerPosition.x))
+                animateX(-screenSize.x + centerPosition.x + (getCurrentWidth() / 2));
+            else if (getX() + (getCurrentWidth() / 2) > (screenSize.x + centerPosition.x))
+                animateX(screenSize.x + centerPosition.x -(getCurrentWidth() / 2));
+        }
+        else {
+            if (getX() - (getCurrentWidth() / 2) > (-screenSize.x + centerPosition.x))
+                animateX(-screenSize.x + centerPosition.x + (getCurrentWidth() / 2));
+            else if (getX() + (getCurrentWidth() / 2) < (screenSize.x + centerPosition.x))
+                animateX(screenSize.x + centerPosition.x -(getCurrentWidth() / 2));
         }
     }
 
     public void scaleSize(float factor){
         float lastFactor = this.factor;
-        float tmpX = getX() - centerPosition.x;
-        float tmpY = getY() - centerPosition.y;
         this.factor = factor;
-        animate().scaleY(factor).setDuration(300);
-        animate().scaleX(factor).setDuration(300);
-        animate().x(tmpX * (factor / lastFactor) + centerPosition.x).setDuration(300);
-        animate().y(tmpY * (factor / lastFactor) + centerPosition.y).setDuration(300);
+        float tmpX = (getX() - centerPosition.x) * (factor / lastFactor) + centerPosition.x;
+        float tmpY = (getY() - centerPosition.y) * (factor / lastFactor) + centerPosition.y;
+        isAnimated = true;
+        animate().setDuration(150);
+        animate().scaleY(factor);
+        animate().scaleX(factor);
+        animate().x(tmpX);
+        animate().y(tmpY);
+        animate().withEndAction(() -> {
+            isAnimated = false;
+            checkBorders();
+        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
@@ -180,10 +199,13 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
         if(motionEvent.getAction() == MotionEvent.ACTION_UP) {
             if(factor < 1.0f) {
                 factor = 1.0f;
-                animate().scaleY(factor).setDuration(300);
-                animate().scaleX(factor).setDuration(300);
-                animate().x(centerPosition.x).setDuration(300);
-                animate().y(centerPosition.y).setDuration(300);
+                isAnimated = true;
+                animate().setDuration(300);
+                animate().scaleY(factor);
+                animate().scaleX(factor);
+                animate().x(centerPosition.x);
+                animate().y(centerPosition.y);
+                animate().withEndAction(() -> isAnimated = false);
             }
             else if (factor > maxScale * 0.8f) {
                 scaleSize(maxScale * 0.8f);
@@ -205,16 +227,29 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
         }
     }
 
+    public void setCenterPosition() {
+        setX(centerPosition.x);
+        setY(centerPosition.y);
+    }
+
     public float getFactor() {
         return factor;
     }
 
-    public void setFactor(float factor) {
-        this.factor = factor;
+    public float getMaxScale(){
+        return maxScale;
+    }
+
+    public void setMaxScale(float maxScale) {
+        this.maxScale = maxScale;
     }
 
     public float getCurrentWidth() {
         return this.getWidth() * factor;
+    }
+
+    public boolean isAnimated() {
+        return isAnimated;
     }
 
     public float getCurrentHeight() {
