@@ -16,7 +16,7 @@
         tools:layout="@layout/fragment_story" />
     <fragment
         android:id="@+id/navigation_items"
-        android:name="com.example.thewitcherwildhuntguidbook.ui.Items.Items"
+        android:name="com.example.thewitcherwildhuntguidbook.ui.Items.ItemsFragment"
         android:label="@string/navigation_items"
         tools:layout="@layout/fragment_items" />
     <fragment
