@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -24,9 +25,48 @@ import com.example.thewitcherwildhuntguidbook.R;
 public class Map extends Fragment {
     private MapView[] mapViews = new MapView[6];
     private int mapId = 0;
+    private TextView scaleText;
 
     private String[] maps = {"Велен", "Новиград", "Белый Сад", "Скеллиге", "Каэр Морхен", "Туссент"};
     private Spinner spinnerMaps;
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        MapViewModel model = new ViewModelProvider(requireActivity()).get(MapViewModel.class);
+        if(model.getMapId() != null) {
+            mapViews[mapId].setVisibility(View.INVISIBLE);
+            mapId = model.getMapId().getValue();
+            spinnerMaps.setSelection(mapId);
+            mapViews[mapId].setX(model.getPositionX().getValue());
+            mapViews[mapId].setY(model.getPositionY().getValue());
+            mapViews[mapId].setScaleX(model.getScale().getValue());
+            mapViews[mapId].setScaleY(model.getScale().getValue());
+            mapViews[mapId].setFactor(model.getScale().getValue());
+            mapViews[mapId].post(() -> mapViews[mapId].setCenterPosition(model.getCenterPosition().getValue()));
+            scaleText.setText(Math.round(model.getScale().getValue()*100)+"%");
+            mapViews[mapId].setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        MapViewModel model = new ViewModelProvider(requireActivity()).get(MapViewModel.class);
+        model.setMapId(mapId);
+        model.setPositionX(mapViews[mapId].getCurrentX());
+        model.setPositionY(mapViews[mapId].getCurrentY());
+        model.setCenterPosition(mapViews[mapId].getCenterPosition());
+        model.setScale(mapViews[mapId].getFactor());
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        MapViewModel model = new ViewModelProvider(requireActivity()).get(MapViewModel.class);
+        model.setPositionX(mapViews[mapId].getX());
+        model.setPositionY(mapViews[mapId].getY());
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +84,7 @@ public class Map extends Fragment {
         mapViews[2] = view.findViewById(R.id.map_white_orchard);
         mapViews[1].setMaxScale(12f);
         mapViews[4] = view.findViewById(R.id.map_kaer_morhen);
+
         spinnerMaps = view.findViewById(R.id.spinner_map);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.custom_spinner, maps);
         adapter.setDropDownViewResource(R.layout.item_spinner);
@@ -52,9 +93,11 @@ public class Map extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 mapViews[mapId].setVisibility(View.INVISIBLE);
-                mapViews[mapId].setCenterPosition();
-                mapViews[mapId].setScaleY(1f);
-                mapViews[mapId].setScaleX(1f);
+                if (mapId != i) {
+                    mapViews[mapId].moveToCenterPosition();
+                    mapViews[mapId].setScaleY(1f);
+                    mapViews[mapId].setScaleX(1f);
+                }
                 switch (adapterView.getSelectedItem().toString()) {
                     case "Велен":
                         mapId = 0;
@@ -81,29 +124,21 @@ public class Map extends Fragment {
             }
         };
         spinnerMaps.setOnItemSelectedListener(itemSelectedListener);
-        TextView scaleText = view.findViewById(R.id.scaleText);
+        scaleText = view.findViewById(R.id.scaleText);
 
         ImageButton zoomInButton = view.findViewById(R.id.zoomInButton);
-        zoomInButton.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View view) {
-                if(!mapViews[mapId].isAnimated()) {
-                    mapViews[mapId].scaleSize(Math.min(mapViews[mapId].getFactor() * 1.3f, mapViews[mapId].getMaxScale() * 0.8f));
-                    scaleText.setText(Math.round(mapViews[mapId].getFactor() * 100) + "%");
-                }
+        zoomInButton.setOnClickListener(view1 -> {
+            if(!mapViews[mapId].isAnimated()) {
+                mapViews[mapId].scaleSize(Math.min(mapViews[mapId].getFactor() * 1.3f, mapViews[mapId].getMaxScale() * 0.8f));
+                scaleText.setText(Math.round(mapViews[mapId].getFactor() * 100) + "%");
             }
         });
 
         ImageButton zoomOutButton = view.findViewById(R.id.zoomOutButton);
-        zoomOutButton.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View view) {
-                if(!mapViews[mapId].isAnimated()) {
-                    mapViews[mapId].scaleSize(Math.max(mapViews[mapId].getFactor() / 1.3f, 1f));
-                    scaleText.setText(Math.round(mapViews[mapId].getFactor() * 100) + "%");
-                }
+        zoomOutButton.setOnClickListener(view12 -> {
+            if(!mapViews[mapId].isAnimated()) {
+                mapViews[mapId].scaleSize(Math.max(mapViews[mapId].getFactor() / 1.3f, 1f));
+                scaleText.setText(Math.round(mapViews[mapId].getFactor() * 100) + "%");
             }
         });
 
@@ -112,9 +147,9 @@ public class Map extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.Q)
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+
                 if(motionEvent.getPointerCount() > 1) {
                     mapViews[mapId].scaleSize(motionEvent);
-                    scaleText.setText(Math.round(mapViews[mapId].getFactor()*100)+"%");
                 }
                 else
                     mapViews[mapId].scroll(motionEvent);
@@ -123,6 +158,7 @@ public class Map extends Fragment {
                     mapViews[mapId].scroll(motionEvent);
                     mapViews[mapId].scaleSize(motionEvent);
                 }
+                scaleText.setText(Math.round(mapViews[mapId].getFactor()*100)+"%");
                 return true;
             }
         });

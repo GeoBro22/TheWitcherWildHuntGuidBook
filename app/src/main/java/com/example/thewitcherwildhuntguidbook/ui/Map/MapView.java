@@ -20,7 +20,7 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
     private float maxScale = 8f;
     private final PointF currentPosition = new PointF(0.0f, 0.0f);
     private final Point screenSize = new Point(0,0);
-    private final PointF centerPosition = new PointF(0,0);
+    private PointF centerPosition = new PointF(0,0);
     private final PointF offset = new PointF(0.0f, 0.0f);
     private int point;
 
@@ -86,7 +86,7 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
     }
 
     private void setCenterPosition(MapView mapImage){
-        post(() -> centerPosition.set(mapImage.getX(), mapImage.getY() - 20));
+        post(() -> centerPosition.set(getX(), getY() - 40f));
     }
 
     public void scroll(MotionEvent motionEvent) {
@@ -204,7 +204,7 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
                 animate().scaleY(factor);
                 animate().scaleX(factor);
                 animate().x(centerPosition.x);
-                animate().y(centerPosition.y);
+                animate().y(centerPosition.y+40);
                 animate().withEndAction(() -> isAnimated = false);
             }
             else if (factor > maxScale * 0.8f) {
@@ -227,13 +227,33 @@ public class MapView extends androidx.appcompat.widget.AppCompatImageView {
         }
     }
 
-    public void setCenterPosition() {
+    public void moveToCenterPosition() {
         setX(centerPosition.x);
-        setY(centerPosition.y);
+        setY(centerPosition.y+40);
+    }
+
+    public float getCurrentX(){
+        return getX() - centerPosition.x;
+    }
+
+    public float getCurrentY(){
+        return getY() - (centerPosition.y + 40);
+    }
+
+    public PointF getCenterPosition(){
+        return centerPosition;
+    }
+
+    public void setCenterPosition(PointF centerPosition){
+        this.centerPosition = centerPosition;
     }
 
     public float getFactor() {
         return factor;
+    }
+
+    public void setFactor(float factor){
+        this.factor = factor;
     }
 
     public float getMaxScale(){

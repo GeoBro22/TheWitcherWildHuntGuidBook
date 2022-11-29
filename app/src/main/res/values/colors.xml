@@ -3,6 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="gray">#FF303030</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="tier_magic">#FFEF86</color>
-    <color name="tier_magic_text">#38371D</color>
+    <color name="tier_magic">#FFFFEF86</color>
+    <color name="tier_magic_text">#FF38371D</color>
 </resources>
