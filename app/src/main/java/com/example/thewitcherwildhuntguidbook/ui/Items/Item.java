@@ -1,89 +1,50 @@
 package com.example.thewitcherwildhuntguidbook.ui.Items;
 
+import androidx.annotation.DrawableRes;
+
 public class Item {
-    private int weaponResourceOne;
-    private String nameOne;
-    private String tierOne;
-    private String weightOne;
+    @DrawableRes
+    private int weaponResource;
+    private String name;
+    private String tier;
+    private String weight;
 
-    private int weaponResourceTwo;
-    private String nameTwo;
-    private String tierTwo;
-    private String weightTwo;
-
-    public Item(int weaponResourceOne, String nameOne, String tierOne, String weightOne,
-                int weaponResourceTwo, String nameTwo, String tierTwo, String weightTwo) {
-        this.weaponResourceOne = weaponResourceOne;
-        this.nameOne = nameOne;
-        this.tierOne = tierOne;
-        this.weightOne = weightOne;
-        this.weaponResourceTwo = weaponResourceTwo;
-        this.nameTwo = nameTwo;
-        this.tierTwo = tierTwo;
-        this.weightTwo = weightTwo;
+    public Item(int weaponResource, String name, String tier, String weight) {
+        this.weaponResource = weaponResource;
+        this.name = name;
+        this.tier = tier;
+        this.weight = weight;
     }
 
-    public int getWeaponResourceOne() {
-        return weaponResourceOne;
+    public int getWeaponResource() {
+        return weaponResource;
     }
 
-    public void setWeaponResourceOne(int weaponResourceOne) {
-        this.weaponResourceOne = weaponResourceOne;
+    public void setWeaponResource(int weaponResource) {
+        this.weaponResource = weaponResource;
     }
 
-    public String getNameOne() {
-        return nameOne;
+    public String getName() {
+        return name;
     }
 
-    public void setNameOne(String nameOne) {
-        this.nameOne = nameOne;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTierOne() {
-        return tierOne;
+    public String getTier() {
+        return tier;
     }
 
-    public void setTierOne(String tierOne) {
-        this.tierOne = tierOne;
+    public void setTier(String tier) {
+        this.tier = tier;
     }
 
-    public String getWeightOne() {
-        return weightOne;
+    public String getWeight() {
+        return weight;
     }
 
-    public void setWeightOne(String weightOne) {
-        this.weightOne = weightOne;
-    }
-
-    public int getWeaponResourceTwo() {
-        return weaponResourceTwo;
-    }
-
-    public void setWeaponResourceTwo(int weaponResourceTwo) {
-        this.weaponResourceTwo = weaponResourceTwo;
-    }
-
-    public String getNameTwo() {
-        return nameTwo;
-    }
-
-    public void setNameTwo(String nameTwo) {
-        this.nameTwo = nameTwo;
-    }
-
-    public String getTierTwo() {
-        return tierTwo;
-    }
-
-    public void setTierTwo(String tierTwo) {
-        this.tierTwo = tierTwo;
-    }
-
-    public String getWeightTwo() {
-        return weightTwo;
-    }
-
-    public void setWeightTwo(String weightTwo) {
-        this.weightTwo = weightTwo;
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 }
