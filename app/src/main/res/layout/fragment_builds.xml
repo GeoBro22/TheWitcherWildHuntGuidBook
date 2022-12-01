@@ -11,31 +11,11 @@
         android:layout_height="wrap_content"
         tools:context=".ui.Build.Builds">
 
-
-        <!-- TODO: Update blank fragment layout -->
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/wolf"
             android:layout_width="390dp"
             android:layout_height="1390dp"
             android:padding="16dp">
-
-            <!--<TextView
-                android:id="@+id/selection"
-                android:layout_width="328dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="16dp"
-                android:autoLink="web"
-                android:linksClickable="true"
-                android:textSize="36sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-            </TextView>
--->
 
             <LinearLayout
                 android:id="@+id/wolf_arm1"
@@ -261,12 +241,13 @@
                 android:layout_gravity="start"
 
                 android:layout_marginTop="280dp"
+                android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/form"
                 android:orientation="vertical"
+
+
                 android:paddingTop="10dp"
-
-
                 android:paddingBottom="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_chainStyle="spread"
@@ -311,7 +292,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="390dp"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
             android:padding="16dp">
 

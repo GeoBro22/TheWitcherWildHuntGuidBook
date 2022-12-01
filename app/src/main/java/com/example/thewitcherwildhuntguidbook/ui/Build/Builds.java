@@ -52,16 +52,16 @@ public class Builds extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 // Получаем выбранный объект
                 String item = (String)parent.getItemAtPosition(position);
-                //if (item.equals("Школа Волка"))
-                  //  selection.setText(item);
-                //else if (item.equals("Школа Кота"))
-                  //  selection.setText(item);
-                //else if (item.equals("Школа Медведя"))
-                  //  selection.setText(item);
-                //else if (item.equals("Школа Мантикоры"))
-                  //  selection.setText(item);
-                //else if (item.equals("Школа Змеи"))
-                  //  selection.setText(item);
+                if (item.equals("Школа Волка"))
+                    wolf.setVisibility(View.VISIBLE);
+                else if (item.equals("Школа Кота"))
+                    wolf.setVisibility(View.INVISIBLE);
+                else if (item.equals("Школа Медведя"))
+                    wolf.setVisibility(View.INVISIBLE);
+                else if (item.equals("Школа Мантикоры"))
+                    wolf.setVisibility(View.INVISIBLE);
+                else if (item.equals("Школа Змеи"))
+                    wolf.setVisibility(View.INVISIBLE);
             }
 
             @Override
