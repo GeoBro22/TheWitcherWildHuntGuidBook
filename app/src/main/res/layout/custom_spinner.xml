@@ -7,5 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/dropdownListPreferredItemHeight"
     android:ellipsize="marquee"
-    android:textColor="#ECB365"
+    android:textColor="#EAEAEA"
     android:gravity="center"/>

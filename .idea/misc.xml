@@ -3,28 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/drawable/bg_spinner.xml" value="0.122" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/drawable/items_spinner.xml" value="0.257" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/drawable/style_spinner.xml" value="0.134" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/custom_spinner.xml" value="0.2515625" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_build.xml" value="0.22554347826086957" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_builds.xml" value="0.11197916666666667" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_home.xml" value="0.11197916666666667" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_map.xml" value="0.176" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/item_spinner.xml" value="0.189453125" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/layout_drop_list.xml" value="0.1109375" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/layout_drop_title.xml" value="0.1" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/menu_map.xml" value="0.1109375" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/spinnerwound.xml" value="0.2515625" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/style_spinner.xml" value="0.1234375" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/menu/actionbar_menu.xml" value="0.1109375" />
-        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
-        <entry key="..\:/java/Android/TheWitcher/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/java/Android/TheWitcher/app/src/main/res/layout/fragment_builds.xml" value="0.14322916666666666" />
-        <entry key="..\:/java/Android/TheWitcher/app/src/main/res/layout/fragment_items.xml" value="0.10989583333333333" />
-        <entry key="..\:/java/Android/TheWitcher/app/src/main/res/layout/weapon_card.xml" value="0.2" />
-        <entry key="..\:/java/Android/TheWitcher/app/src/main/res/menu/bottom_nav_menu.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/drawable-v24/form.xml" value="0.1975" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/custom_spinner.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_builds.xml" value="0.176" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_items.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/fragment_map.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/item_spinner.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/layout/weapon_card.xml" value="0.4" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/GeoBro22/AndroidStudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/xml/form.xml" value="0.1265625" />
+        <entry key="..\:/Users/kashe/StudioProjects/TheWitcherWildHuntGuidBook/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.123" />
       </map>
     </option>
   </component>
