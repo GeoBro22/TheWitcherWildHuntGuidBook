@@ -11,12 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.thewitcherwildhuntguidbook.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
-    private final List<Item> itemList;
+    private final ArrayList<Item> itemList;
 
-    ItemAdapter(List<Item> itemList) {
+    ItemAdapter(ArrayList<Item> itemList) {
         this.itemList = itemList;
     }
 
