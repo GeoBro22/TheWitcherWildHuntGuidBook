@@ -16,9 +16,16 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
     private final ArrayList<Item> itemList;
+    View.OnClickListener itemOnClickListener;
 
-    ItemAdapter(ArrayList<Item> itemList) {
+
+    /*public interface ItemOnClickListener {
+        public abstract void onClick (View view);
+    }*/
+
+    ItemAdapter(ArrayList<Item> itemList, View.OnClickListener itemOnClickListener) {
         this.itemList = itemList;
+        this.itemOnClickListener = itemOnClickListener;
     }
 
     @NonNull
