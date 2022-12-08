@@ -6,7 +6,7 @@
     app:startDestination="@id/navigation_home">
     <fragment
         android:id="@+id/navigation_map"
-        android:name="com.example.thewitcherwildhuntguidbook.ui.Map.Map"
+        android:name="com.example.thewitcherwildhuntguidbook.ui.Map.MapFragment"
         android:label="@string/navigation_map"
         tools:layout="@layout/fragment_map" />
     <fragment
