@@ -16,23 +16,16 @@ import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
     private final ArrayList<Item> itemList;
-    ItemClickListener itemOnClickListener;
 
-
-    public interface ItemClickListener {
-        void onClick (int position);
-    }
-
-    ItemAdapter(ArrayList<Item> itemList, ItemClickListener itemOnClickListener) {
+    ItemAdapter(ArrayList<Item> itemList) {
         this.itemList = itemList;
-        this.itemOnClickListener = itemOnClickListener;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.weapon_card, parent, false);
-        return new ViewHolder(view, itemOnClickListener);
+        return new ViewHolder(view);
     }
 
     @Override
@@ -56,22 +49,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
         final TextView tier;
         final TextView weight;
 
-        public ViewHolder(@NonNull View itemView, ItemClickListener itemClickListener) {
-            super(itemView);
-            imageView = itemView.findViewById(R.id.weapon_image);
-            name = itemView.findViewById(R.id.weapon_name);
-            tier = itemView.findViewById(R.id.weapon_tier);
-            weight = itemView.findViewById(R.id.weapon_weight);
-
-            itemView.setOnClickListener(v -> {
-                if (itemClickListener != null) {
-                    int pos = getAbsoluteAdapterPosition();
-
-                    if (pos != RecyclerView.NO_POSITION){
-                        itemClickListener.onClick(pos);
-                    }
-                }
-            });
+        public ViewHolder(@NonNull View view) {
+            super(view);
+            imageView = view.findViewById(R.id.weapon_image);
+            name = view.findViewById(R.id.weapon_name);
+            tier = view.findViewById(R.id.weapon_tier);
+            weight = view.findViewById(R.id.weapon_weight);
         }
     }
 }

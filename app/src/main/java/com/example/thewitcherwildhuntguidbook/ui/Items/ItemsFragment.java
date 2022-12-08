@@ -1,6 +1,5 @@
 package com.example.thewitcherwildhuntguidbook.ui.Items;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,21 +7,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.FrameLayout;
 
 import com.example.thewitcherwildhuntguidbook.R;
 import com.example.thewitcherwildhuntguidbook.databinding.FragmentItemsBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class ItemsFragment extends Fragment {
     FragmentItemsBinding binding;
@@ -44,22 +37,28 @@ public class ItemsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ItemDataSource itemDataSource = new ItemDataSource(getResources());
 
-        itemArrayList = new ArrayList<>();
-        ItemAdapter.ItemClickListener itemClickListener = position -> {
-
-        };
-
-        ItemAdapter itemAdapter = new ItemAdapter(itemArrayList, itemClickListener);
-
-
-        viewModel = new ViewModelProvider(requireActivity()).get(ItemsViewModel.class);
-        viewModel.getItemList().observe(getViewLifecycleOwner(), items -> {
-            System.out.println("ItemLIst changed");
-            itemArrayList.addAll(items);
-        });
+        itemArrayList = new ArrayList<>(itemDataSource.getItems());
+        ItemAdapter itemAdapter = new ItemAdapter(itemArrayList);
 
         binding.recyclerView.setAdapter(itemAdapter);
-    }
 
+        /*viewModel = new ViewModelProvider(requireActivity()).get(ItemsViewModel.class);
+        viewModel.getItemList().observe(getViewLifecycleOwner(), new Observer<ArrayList<Item>>() {
+            @Override
+            public void onChanged(ArrayList<Item> items) {
+                itemArrayList = items;
+
+                itemAdapter.notifyDataSetChanged();
+                System.out.println(itemAdapter.getItemCount());
+                for (Item item: itemArrayList) {
+                    System.out.println(item.getWeaponResource() + " " +
+                            item.getName() + " " + item.getTier() + " " + item.getWeight());
+                }
+                System.out.println("sooo");
+            }
+        });*/
+
+    }
 }
