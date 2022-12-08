@@ -15,18 +15,13 @@ public class ItemsViewModel extends AndroidViewModel {
         super(application);
 
         itemDataSource = new ItemDataSource(application.getResources());
-        itemList = new MutableLiveData<>();
-        ArrayList<Item> items = itemDataSource.getItems();
+        itemList = new MutableLiveData<>(itemDataSource.getItems());
+        /* ArrayList<Item> items = itemDataSource.getItems();
         for (Item item: items) {
             System.out.println(item.getWeaponResource() + " " +
                     item.getName() + " " + item.getTier() + " " + item.getWeight());
-        }
+        } */
     }
-
-    public void init() {
-        itemList.setValue(itemDataSource.getItems());
-    }
-
 
     public MutableLiveData<ArrayList<Item>> getItemList() {
         return itemList;
