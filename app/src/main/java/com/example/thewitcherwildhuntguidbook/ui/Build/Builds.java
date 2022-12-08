@@ -40,7 +40,7 @@ public class Builds extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Spinner spinner = view.findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter(getActivity(), R.layout.custom_spinner, schools);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.custom_spinner, schools);
         adapter.setDropDownViewResource(R.layout.item_spinner);
         spinner.setAdapter(adapter);
         ConstraintLayout wolf = view.findViewById(R.id.wolf);

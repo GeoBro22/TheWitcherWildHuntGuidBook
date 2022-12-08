@@ -14,7 +14,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/wolf"
             android:layout_width="390dp"
-            android:layout_height="1390dp"
+            android:layout_height="1281dp"
             android:padding="16dp">
 
             <LinearLayout
@@ -78,7 +78,7 @@
                 android:layout_gravity="start"
 
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="275dp"
                 android:layout_weight="1"
                 android:background="@drawable/form"
                 android:orientation="vertical"
@@ -240,7 +240,7 @@
                 android:layout_height="268dp"
                 android:layout_gravity="start"
 
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="275dp"
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/form"
@@ -289,6 +289,138 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/wolf_ar"
+                android:layout_width="172dp"
+                android:layout_height="268dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="640dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_wolf_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_wolf_armor" />
+
+                <TextView
+                    android:id="@+id/name_wolf_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерский доспех Школы Волка"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tier_wolf_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Tier: magic"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/weight_wolf_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Weight: 1.81"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wolf_"
+                android:layout_width="172dp"
+                android:layout_height="268dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="640dp"
+
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_wolf_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_wolf_armor" />
+
+                <TextView
+                    android:id="@+id/name_wolf_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерский доспех Школы Волка"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tier_wolf_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Tier: magic"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/weight_wolf_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Weight: 1.81"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_wolf_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="964dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/wolf_skils"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+
+                android:text="Необходимые навыки"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/image_wolf_skills"
+                tools:layout_editor_absoluteX="20dp" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -298,7 +430,7 @@
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="186dp"
+                android:layout_width="205dp"
                 android:layout_height="42dp"
                 android:background="@drawable/bg_spinner"
                 android:popupBackground="@drawable/bg_spinner"
