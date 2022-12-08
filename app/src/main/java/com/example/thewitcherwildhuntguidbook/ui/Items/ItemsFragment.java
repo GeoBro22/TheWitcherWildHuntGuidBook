@@ -46,10 +46,11 @@ public class ItemsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         itemArrayList = new ArrayList<>();
-        View.OnClickListener onClick = v -> {
+        ItemAdapter.ItemClickListener itemClickListener = position -> {
+
         };
 
-        ItemAdapter itemAdapter = new ItemAdapter(itemArrayList, onClick);
+        ItemAdapter itemAdapter = new ItemAdapter(itemArrayList, itemClickListener);
 
 
         viewModel = new ViewModelProvider(requireActivity()).get(ItemsViewModel.class);
