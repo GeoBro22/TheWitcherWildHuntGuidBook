@@ -11,16 +11,17 @@
         android:layout_height="wrap_content"
         tools:context=".ui.Build.Builds">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/wolf"
-            android:layout_width="390dp"
-            android:layout_height="1281dp"
+            android:layout_width="match_parent"
+            android:layout_height="2164dp"
             android:padding="16dp">
 
             <LinearLayout
                 android:id="@+id/wolf_arm1"
                 android:layout_width="172dp"
-                android:layout_height="268dp"
+                android:layout_height="550dp"
                 android:layout_gravity="start"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="92dp"
@@ -48,25 +49,52 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерский доспех Школы Волка"
+                    android:text="Гроссмейстерский доспех Школы Волка\n"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/tier_wolf_arm1"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/first_wolf_arm1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
+                    android:text="Получение адреналина     +35%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/weight_wolf_arm1"
+                    android:id="@+id/second_wolf_arm1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
+                    android:text="Сопротивление колющим\nударам              +26%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_wolf_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                 +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_wolf_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +33%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_wolf_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +36%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
             </LinearLayout>
@@ -74,11 +102,11 @@
             <LinearLayout
                 android:id="@+id/wolf_arm3"
                 android:layout_width="172dp"
-                android:layout_height="268dp"
+                android:layout_height="550dp"
                 android:layout_gravity="start"
 
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="275dp"
+                android:layout_marginTop="560dp"
                 android:layout_weight="1"
                 android:background="@drawable/form"
                 android:orientation="vertical"
@@ -99,88 +127,67 @@
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/armor_wolf_boots" />
 
-                <LinearLayout
-                    android:id="@+id/wolf_arm2"
-                    android:layout_width="182dp"
-
-                    android:layout_height="270dp"
-                    android:layout_gravity="start"
-
-                    android:layout_weight="1"
-                    android:background="@color/tier_magic"
-                    android:orientation="vertical"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    tools:ignore="MissingConstraints">
-
-                    <ImageView
-                        android:id="@+id/image_wolf_arm2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/armor_wolf_gauntlets" />
-
-                    <TextView
-                        android:id="@+id/name_wolf_arm2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Гроссмейстерские перчатки Школы Волка"
-                        android:textColor="@color/tier_magic_text"
-                        android:textSize="19sp" />
-
-                    <TextView
-                        android:id="@+id/tier_wolf_arm2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Tier: magic"
-                        android:textColor="@color/tier_magic_text"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/weight_wolf_arm2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Weight: 1.81"
-                        android:textColor="@color/tier_magic_text"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
                 <TextView
                     android:id="@+id/name_wolf_arm3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерские штаны Школы Волка"
+                    android:text="Гроссмейстерские Сапоги Школы Волка\n"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/tier_wolf_arm3"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/first_wolf_arm3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
+                    android:text="Сила \nатаки                 +17%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/weight_wolf_arm3"
+                    android:id="@+id/second_wolf_arm3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
+                    android:text="Сопротивление колющим\nударам                +7%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_wolf_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_wolf_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_wolf_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/wolf_arm4"
                 android:layout_width="172dp"
 
-                android:layout_height="268dp"
+                android:layout_height="550dp"
                 android:layout_gravity="start"
 
                 android:layout_marginTop="92dp"
@@ -211,91 +218,63 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерские штаны Школы Волка"
+                    android:text="Гроссмейстерские штаны Школы Волка\n"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/tier_wolf_arm4"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/first_wolf_arm4"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
+                    android:text="Сила\nатаки                 +18%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/weight_wolf_arm4"
+                    android:id="@+id/second_wolf_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_wolf_arm4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
+                    android:text="Сопротивление стихиям            +45%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_wolf_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +12%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_wolf_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +14%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/wolf_arm"
+                android:id="@+id/tussent_sword1"
                 android:layout_width="172dp"
-                android:layout_height="268dp"
-                android:layout_gravity="start"
-
-                android:layout_marginTop="275dp"
-                android:layout_marginEnd="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/form"
-                android:orientation="vertical"
-
-
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintTop_toTopOf="@+id/wolf_arm4"
-                tools:ignore="MissingConstraints">
-
-                <ImageView
-                    android:id="@+id/image_wolf_arm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/armor_wolf_trousers" />
-
-                <TextView
-                    android:id="@+id/name_wolf_arm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерские штаны Школы Волка"
-                    android:textColor="@color/tier_magic_text"
-                    android:textSize="19sp" />
-
-                <TextView
-                    android:id="@+id/tier_wolf_arm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
-                    android:textColor="@color/tier_magic_text"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/weight_wolf_arm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
-                    android:textColor="@color/tier_magic_text"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/wolf_ar"
-                android:layout_width="172dp"
-                android:layout_height="268dp"
+                android:layout_height="605dp"
                 android:layout_gravity="start"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="640dp"
+                android:layout_marginTop="1214dp"
 
                 android:layout_weight="1"
 
@@ -309,47 +288,74 @@
                 tools:ignore="MissingConstraints">
 
                 <ImageView
-                    android:id="@+id/image_wolf_ar"
+                    android:id="@+id/image_tussent_sword1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/armor_wolf_armor" />
+                    android:src="@drawable/tussent_sword" />
 
                 <TextView
-                    android:id="@+id/name_wolf_ar"
+                    android:id="@+id/name_tussent_sword1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерский доспех Школы Волка"
+                    android:text="Стальной меч\nтуссентского рыцаря\n"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/tier_wolf_ar"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/first_tussent_sword1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
+                    android:text="Сила \nатаки                 +17%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/weight_wolf_ar"
+                    android:id="@+id/second_tussent_sword1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_tussent_sword1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_tussent_sword1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_tussent_sword1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/wolf_"
+                android:id="@+id/wolf_arondit1"
                 android:layout_width="172dp"
-                android:layout_height="268dp"
+                android:layout_height="605dp"
                 android:layout_gravity="start"
 
-                android:layout_marginTop="640dp"
+                android:layout_marginTop="1214dp"
 
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
@@ -364,38 +370,30 @@
                 tools:ignore="MissingConstraints">
 
                 <ImageView
-                    android:id="@+id/image_wolf_"
+                    android:id="@+id/image_wolf_arondit1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/armor_wolf_armor" />
+                    android:src="@drawable/arondit" />
 
                 <TextView
-                    android:id="@+id/name_wolf_"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/name_wolf_arondit1"
+                    android:layout_width="168dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Гроссмейстерский доспех Школы Волка"
+                    android:text="Серебряный\nмеч\nАрондит\n"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
                 <TextView
-                    android:id="@+id/tier_wolf_"
+                    android:id="@+id/tier_wolf_arondit1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Tier: magic"
+                    android:text="Каждый удар генерирует заряды, увеличивающие урон мечом на 10. Заряды тратятся со временем или при получении урона. Полностью заряженный меч всегда наносит критический урон. Убийство врага заряженным мечом разряжает его, одновременно навсегда увеличивая урон."
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/weight_wolf_"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Weight: 1.81"
-                    android:textColor="@color/tier_magic_text"
-                    android:textSize="18sp" />
             </LinearLayout>
 
             <ImageView
@@ -403,14 +401,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_gravity="end"
-                android:layout_marginTop="964dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginTop="1892dp"
                 android:src="@drawable/wolf_skils"
 
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="1dp" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/text_wolf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -420,8 +418,90 @@
                 app:layout_constraintBottom_toTopOf="@+id/image_wolf_skills"
                 tools:layout_editor_absoluteX="20dp" />
 
+            <LinearLayout
+                android:id="@+id/wolf_arm2"
+                android:layout_width="172dp"
 
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="560dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/wolf_arm4"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_wolf_gauntlets" />
+
+                <TextView
+                    android:id="@+id/name_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские перчатки Школы Волка\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_wolf_arm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_wolf_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -442,6 +522,1494 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="2186dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/cat_arm1"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="92dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_cat_armor" />
+
+                <TextView
+                    android:id="@+id/name_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерский доспех Школы Кота\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_cat_arm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Получение адреналина     +35%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам              +26%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                 +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +33%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_cat_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +36%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cat_arm3"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="560dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+
+                android:paddingBottom="10dp"
+
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cat_arm1"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_cat_boots" />
+
+                <TextView
+                    android:id="@+id/name_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские Сапоги Школы Кота\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_cat_arm3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_cat_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cat_arm4"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="4dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_cat_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_cat_trousers" />
+
+                <TextView
+                    android:id="@+id/name_cat_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские штаны Школы Кота\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_cat_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила\nатаки                 +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_cat_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_cat_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +45%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_cat_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +12%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_cat_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +14%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tussent_sword2"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="1214dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tussent_sword" />
+
+                <TextView
+                    android:id="@+id/name_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_tussent_sword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_tussent_sword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cat_arondit2"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="1214dp"
+
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_cat_arondit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/arondit" />
+
+                <TextView
+                    android:id="@+id/name_cat_arondit2"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tier_cat_arondit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Каждый удар генерирует заряды, увеличивающие урон мечом на 10. Заряды тратятся со временем или при получении урона. Полностью заряженный меч всегда наносит критический урон. Убийство врага заряженным мечом разряжает его, одновременно навсегда увеличивая урон."
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_cat_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="1892dp"
+                android:src="@drawable/wolf_skils"
+
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/text_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+
+                android:text="Необходимые навыки"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/image_cat_skills"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <LinearLayout
+                android:id="@+id/cat_arm2"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="560dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cat_arm4"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_cat_gauntlets" />
+
+                <TextView
+                    android:id="@+id/name_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские перчатки Школы Кота\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_cat_arm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_cat_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bear"
+            android:layout_width="match_parent"
+            android:layout_height="2164dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/bear_arm1"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="92dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_bear_armor" />
+
+                <TextView
+                    android:id="@+id/name_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерский доспех Школы Медведя\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_bear_arm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Получение адреналина     +35%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам              +26%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                 +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +33%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_bear_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +36%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bear_arm3"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="560dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+
+                android:paddingBottom="10dp"
+
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bear_arm1"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_bear_boots" />
+
+                <TextView
+                    android:id="@+id/name_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские Сапоги Школы Медведя\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_bear_arm3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_bear_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bear_arm4"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="4dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_bear_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_bear_trousers" />
+
+                <TextView
+                    android:id="@+id/name_bear_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские штаны Школы Медведя\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_bear_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила\nатаки                 +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_bear_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_bear_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +45%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_bear_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +12%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_bear_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +14%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tussent_sword3"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="1214dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tussent_sword" />
+
+                <TextView
+                    android:id="@+id/name_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_tussent_sword3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_tussent_sword3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bear_arondit3"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="1214dp"
+
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_bear_arondit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/arondit" />
+
+                <TextView
+                    android:id="@+id/name_bear_arondit3"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tier_bear_arondit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Каждый удар генерирует заряды, увеличивающие урон мечом на 10. Заряды тратятся со временем или при получении урона. Полностью заряженный меч всегда наносит критический урон. Убийство врага заряженным мечом разряжает его, одновременно навсегда увеличивая урон."
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_bear_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="1892dp"
+                android:src="@drawable/wolf_skils"
+
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/text_bear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+
+                android:text="Необходимые навыки"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/image_bear_skills"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <LinearLayout
+                android:id="@+id/bear_arm2"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="560dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bear_arm4"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_bear_gauntlets" />
+
+                <TextView
+                    android:id="@+id/name_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские перчатки Школы Медведя\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_bear_arm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_bear_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/griffin"
+            android:layout_width="match_parent"
+            android:layout_height="2164dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/griffin_arm1"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="92dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_griffin_armor" />
+
+                <TextView
+                    android:id="@+id/name_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерский доспех Школы Грифона\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_griffin_arm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Получение адреналина     +35%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам              +26%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                 +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +33%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_griffin_arm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +36%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/griffin_arm3"
+                android:layout_width="172dp"
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="560dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+
+                android:paddingBottom="10dp"
+
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/griffin_arm1"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_griffin_boots" />
+
+                <TextView
+                    android:id="@+id/name_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские Сапоги Школы Грифона\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_griffin_arm3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_griffin_arm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/griffin_arm4"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="4dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_griffin_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_griffin_trousers" />
+
+                <TextView
+                    android:id="@+id/name_griffin_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские штаны Школы Грифона\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_griffin_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила\nатаки                 +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_griffin_arm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +18%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_griffin_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +45%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_griffin_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам              +12%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_griffin_arm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ           +14%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tussent_sword4"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="1214dp"
+
+                android:layout_weight="1"
+
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/tussent_sword" />
+
+                <TextView
+                    android:id="@+id/name_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_tussent_sword4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сила \nатаки                 +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление ударному\nурону                   +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_tussent_sword4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +8%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/griffin_arondit"
+                android:layout_width="172dp"
+                android:layout_height="605dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="1214dp"
+
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+
+                android:orientation="vertical"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_griffin_arondit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/arondit" />
+
+                <TextView
+                    android:id="@+id/name_griffin_arondit"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tier_griffin_arondit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Каждый удар генерирует заряды, увеличивающие урон мечом на 10. Заряды тратятся со временем или при получении урона. Полностью заряженный меч всегда наносит критический урон. Убийство врага заряженным мечом разряжает его, одновременно навсегда увеличивая урон."
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_griffin_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="1892dp"
+                android:src="@drawable/wolf_skils"
+
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/text_griffin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+
+                android:text="Необходимые навыки"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/image_griffin_skills"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <LinearLayout
+                android:id="@+id/griffin_arm2"
+                android:layout_width="172dp"
+
+                android:layout_height="550dp"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="560dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/form"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/griffin_arm4"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/image_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/armor_griffin_gauntlets" />
+
+                <TextView
+                    android:id="@+id/name_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Гроссмейстерские перчатки Школы Грифона\n"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/first_griffin_arm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Мощь\nзнаков              +17%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/second_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление колющим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fourth_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление рубящим\nударам                +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fifth_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление урону от\nчудовищ             +7%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/third_griffin_arm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сопротивление стихиям            +20%"
+                    android:textColor="@color/tier_magic_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
     </FrameLayout>
 </ScrollView>
