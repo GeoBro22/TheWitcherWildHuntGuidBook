@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weapon1_name">Addan Deith</string>
+    <string name="weapon1_tier">Relic</string>
+    <string name="weapon1_weight">1.18</string>
+
+    <string name="weapon2_name">An\'ferthe</string>
+    <string name="weapon2_tier">Magic</string>
+    <string name="weapon2_weight">1.81</string>
+
+    <string name="weapon3_name">Anathema</string>
+    <string name="weapon3_tier">Relic</string>
+    <string name="weapon3_weight">1.68</string>
+
+    <string name="weapon4_name">Azure Wrath</string>
+    <string name="weapon4_tier">Relic</string>
+    <string name="weapon4_weight">2.26</string>
+
+    <string name="weapon5_name">Bloodsword</string>
+    <string name="weapon5_tier">Relic</string>
+    <string name="weapon5_weight">2.01</string>
+
+    <string name="weapon6_name">Deargdeith</string>
+    <string name="weapon6_tier">Relic</string>
+    <string name="weapon6_weight">3.16</string>
+
+    <string name="weapon7_name">Deithwen</string>
+    <string name="weapon7_tier">Relic</string>
+    <string name="weapon7_weight">2.66</string>
+
+    <string name="weapon8_name">Disglair</string>
+    <string name="weapon8_tier">Magic</string>
+    <string name="weapon8_weight">1.53</string>
+
+    <string name="weapon9_name">Eirlithrad</string>
+    <string name="weapon9_tier">Magic</string>
+    <string name="weapon9_weight">1.53</string>
+
+    <string name="weapon10_name">Fate</string>
+    <string name="weapon10_tier">Relic</string>
+    <string name="weapon10_weight">2.16</string>
+</resources>

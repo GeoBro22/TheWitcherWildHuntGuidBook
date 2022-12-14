@@ -1,108 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TODO: Change constraint or LinearLayouts to CardView-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    android:orientation="vertical"
+    android:layout_margin="10dp" >
 
-    android:id="@+id/weapon_card">
-
-    <LinearLayout
-        app:layout_constraintHorizontal_chainStyle="spread"
-        android:id="@+id/w_one"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        android:background="@color/tier_magic"
-        android:layout_gravity="start"
-        android:layout_weight="1"
-        android:layout_marginEnd="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tier_magic">
+        
         <ImageView
-            android:id="@+id/image_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/silver_sword"
-            android:layout_gravity="center_horizontal" />
-        <TextView
-            android:id="@+id/name_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="An'ferthe"
-            android:textColor="@color/tier_magic_text"
-            android:textSize="24sp"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/weapon_image"
+            android:layout_width="64dp"
+            android:layout_height="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_of_weapon" />
 
         <TextView
-            android:id="@+id/tier_one"
+            android:id="@+id/weapon_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tier: magic"
-            android:textColor="@color/tier_magic_text"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weapon_image"
+            app:layout_constraintBottom_toTopOf="@id/weapon_tier" />
+
+        <TextView
+            android:id="@+id/weapon_tier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:layout_gravity="center_horizontal" />
+            android:textColor="@color/black"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weapon_name"
+            app:layout_constraintBottom_toTopOf="@id/weapon_weight"/>
 
         <TextView
-            android:id="@+id/weight_one"
+            android:id="@+id/weapon_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weight: 1.81"
-            android:textColor="@color/tier_magic_text"
             android:textSize="18sp"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
+            android:textColor="@color/black"
 
-    <LinearLayout
-        android:id="@+id/w_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weapon_tier" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
 
-        android:background="@color/tier_magic"
-        android:layout_gravity="end"
-        android:layout_weight="1"
-        android:layout_marginStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
 
-        <ImageView
-            android:id="@+id/image_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/silver_sword"
-            android:layout_gravity="center_horizontal"/>
-        <TextView
-            android:id="@+id/name_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="An'ferthe"
-            android:textColor="@color/tier_magic_text"
-            android:textSize="24sp"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:id="@+id/tier_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tier: magic"
-            android:textColor="@color/tier_magic_text"
-            android:textSize="18sp"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:id="@+id/weight_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Weight: 1.81"
-            android:textColor="@color/tier_magic_text"
-            android:textSize="18sp"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>
