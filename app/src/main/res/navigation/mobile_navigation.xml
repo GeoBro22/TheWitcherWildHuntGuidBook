@@ -18,7 +18,16 @@
         android:id="@+id/navigation_items"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Items.ItemsFragment"
         android:label="@string/navigation_items"
-        tools:layout="@layout/fragment_items" />
+        tools:layout="@layout/fragment_items" >
+        <action
+            android:id="@+id/action_navigation_items_to_item_description"
+            app:destination="@id/navigation_item_description"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/stay_still"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/stay_still"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_builds"
         android:name="com.example.thewitcherwildhuntguidbook.ui.Build.Builds"
@@ -29,5 +38,13 @@
         android:name="com.example.thewitcherwildhuntguidbook.Home"
         android:label="@string/navigation_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_item_description"
+        android:name="com.example.thewitcherwildhuntguidbook.ui.Items.Description.ItemDescriptionFragment"
+        android:label="fragment_item_description"
+        tools:layout="@layout/fragment_item_description" >
+        <argument
+            android:name="itemId" />
+    </fragment>
 
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.thewitcherwildhuntguidbook.ui.Items;
+package com.example.thewitcherwildhuntguidbook.data;
 
 import androidx.annotation.DrawableRes;
 
