@@ -1,4 +1,4 @@
-package com.example.thewitcherwildhuntguidbook.ui.Map;
+package com.example.thewitcherwildhuntguidbook.viewmodels;
 
 import android.graphics.PointF;
 

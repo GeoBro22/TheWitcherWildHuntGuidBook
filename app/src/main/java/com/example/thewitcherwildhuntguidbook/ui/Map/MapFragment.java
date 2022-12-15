@@ -21,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.thewitcherwildhuntguidbook.R;
+import com.example.thewitcherwildhuntguidbook.viewmodels.MapViewModel;
 
 public class MapFragment extends Fragment {
     private MapView[] mapViews = new MapView[6];
