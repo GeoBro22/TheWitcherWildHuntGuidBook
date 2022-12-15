@@ -20,7 +20,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
     ItemClickListener itemOnClickListener;
     Context context;
 
-
     public interface ItemClickListener {
         void onClick (int position);
     }
@@ -68,7 +67,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
 
             itemView.setOnClickListener(v -> {
                 if (itemClickListener != null) {
-                    int pos = getAbsoluteAdapterPosition();
+                    int pos = getBindingAdapterPosition();
 
                     if (pos != RecyclerView.NO_POSITION){
                         itemClickListener.onClick(pos);

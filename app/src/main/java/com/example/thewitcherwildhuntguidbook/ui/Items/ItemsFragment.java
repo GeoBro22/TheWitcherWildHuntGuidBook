@@ -7,6 +7,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.ConcatAdapter;
+import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +37,7 @@ public class ItemsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         itemArrayList = new ArrayList<>();
 
         ItemAdapter.ItemClickListener itemClickListener = position -> {
@@ -45,14 +48,27 @@ public class ItemsFragment extends Fragment {
         };
 
         ItemAdapter itemAdapter = new ItemAdapter(getContext(), itemArrayList, itemClickListener);
+        HeaderAdapter headerAdapter = new HeaderAdapter();
+        ConcatAdapter concatAdapter = new ConcatAdapter(headerAdapter, itemAdapter);
 
+        final GridLayoutManager manager = new GridLayoutManager(binding.recyclerView.getContext(), 2);
+        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            private final int HEADER_POSITION = 0;
+            @Override
+            public int getSpanSize(int position) {
+                return position == HEADER_POSITION ? manager.getSpanCount() : 1;
+            }
+        });
 
         viewModel = new ViewModelProvider(requireActivity()).get(ItemsViewModel.class);
         viewModel.getItemList().observe(getViewLifecycleOwner(), items -> {
             itemArrayList.addAll(items);
+            itemAdapter.notifyDataSetChanged();
         });
 
-        binding.recyclerView.setAdapter(itemAdapter);
+        binding.recyclerView.setAdapter(concatAdapter);
+        binding.recyclerView.setLayoutManager(manager);
+
     }
 
 }

@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.thewitcherwildhuntguidbook.R;
 import com.example.thewitcherwildhuntguidbook.data.ItemExtended;
 import com.example.thewitcherwildhuntguidbook.databinding.FragmentItemDescriptionBinding;
 import com.example.thewitcherwildhuntguidbook.viewmodels.ItemsDescriptionViewModel;
@@ -47,10 +48,10 @@ public class ItemDescriptionFragment extends Fragment {
                 return;
             binding.weaponName.setText(itemExtended.getName());
             binding.weaponImage.setImageResource(itemExtended.getWeaponResource());
-            binding.weaponTier.setText(itemExtended.getTier());
-            binding.weaponWeight.setText(itemExtended.getWeight());
-            binding.weaponEffects.setText(itemExtended.getEffects());
-            binding.weaponSource.setText(itemExtended.getSource());
+            binding.weaponTier.setText(getResources().getString(R.string.weapon_tier_constr, itemExtended.getTier()));
+            binding.weaponWeight.setText(getResources().getString(R.string.weapon_weight_constr, itemExtended.getWeight()));
+            binding.weaponEffects.setText(getResources().getString(R.string.weapon_effects_constr,itemExtended.getEffects()));
+            binding.weaponSource.setText(getResources().getString(R.string.weapon_source_constr,itemExtended.getSource()));
         });
         viewModel.getPosition().setValue(position);
 

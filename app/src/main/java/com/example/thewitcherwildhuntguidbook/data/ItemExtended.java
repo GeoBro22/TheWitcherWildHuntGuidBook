@@ -1,7 +1,5 @@
 package com.example.thewitcherwildhuntguidbook.data;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ItemExtended extends Item{
     private String source;
