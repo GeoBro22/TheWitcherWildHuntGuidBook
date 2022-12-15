@@ -230,9 +230,24 @@ public class ItemDataSource {
                 new Item(R.drawable.weapon51_resource,
                         resources.getString(R.string.weapon51_name),
                         resources.getString(R.string.weapon51_tier),
-                        resources.getString(R.string.weapon51_weight))
+                        resources.getString(R.string.weapon51_weight)),
+                new Item(R.drawable.weapon101_resource,
+                        resources.getString(R.string.weapon101_name),
+                        resources.getString(R.string.weapon101_tier),
+                        resources.getString(R.string.weapon101_weight)),
+                new Item(R.drawable.weapon102_resource,
+                        resources.getString(R.string.weapon102_name),
+                        resources.getString(R.string.weapon102_tier),
+                        resources.getString(R.string.weapon102_weight)),
+                new Item(R.drawable.weapon103_resource,
+                        resources.getString(R.string.weapon103_name),
+                        resources.getString(R.string.weapon103_tier),
+                        resources.getString(R.string.weapon103_weight)),
+                new Item(R.drawable.weapon104_resource,
+                        resources.getString(R.string.weapon104_name),
+                        resources.getString(R.string.weapon104_tier),
+                        resources.getString(R.string.weapon104_weight))
                 ));
-
     }
 
     private ArrayList<ItemExtended> initItemsExtended(ArrayList<Item> items) {
@@ -389,7 +404,16 @@ public class ItemDataSource {
                         resources.getString(R.string.weapon50_effects)),
                 new ItemExtended(items.get(50),
                         resources.getString(R.string.weapon51_source),
-                        resources.getString(R.string.weapon51_effects))
+                        resources.getString(R.string.weapon51_effects)),
+                new ItemExtended(items.get(51),
+                        resources.getString(R.string.weapon101_source),
+                        resources.getString(R.string.weapon101_effects)),
+                new ItemExtended(items.get(52),
+                        resources.getString(R.string.weapon102_source),
+                        resources.getString(R.string.weapon102_effects)),
+                new ItemExtended(items.get(53),
+                        resources.getString(R.string.weapon103_source),
+                        resources.getString(R.string.weapon103_effects))
         ));
     }
 }
