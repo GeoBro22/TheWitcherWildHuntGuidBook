@@ -1,13 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--sdsd-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="400dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="85sp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/taverna" />
+
+            <TextView
+                android:id="@+id/logo_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Добро пожаловать в нашу скромную таверну путник!"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColorLink="@color/tier_magic" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320sp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Утомился от долгого пути, ведьмак?\nУстал от бесконечной борьбы? \nЧудовища не дают продохнуть? \nТогда ты по адресу.\nТебе очень повезло путник, ведь в этой таверне собрались самые прожённые суровой ведьмачьей жизнью подонки. Мы то уж тебя жизни научим... И путь укажем, и оружие подберём. Чувствуй себя как дома. \nПартейку в Гвинт? Или может по стакану отменной медовухи? Что-то ты неразговорчивый... Вот все вы ведьмаки такие. Звать то тебя хоть как? Ну, будем знакомы. \nСтало быть и нам представиться надобно..."
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="550sp"
+                android:src="@drawable/kirill" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="550sp"
+                android:src="@drawable/georgy" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="75sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="550sp"
+                android:layout_marginLeft="125dp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Наш летописец Кирилл" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="75sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="550sp"
+                android:layout_marginLeft="305dp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Наш оружейник Георгий" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="75sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="630sp"
+                android:layout_marginLeft="125dp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Наш картограф Ростислав" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="75sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="630sp"
+                android:layout_marginLeft="305dp"
+                android:fontFamily="@font/text_for_logo_hom"
+                android:text="Наш кузнец Виктор" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="630sp"
+                android:src="@drawable/rostik" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="630sp"
+                android:src="@drawable/vitya" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sticker" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
 </FrameLayout>

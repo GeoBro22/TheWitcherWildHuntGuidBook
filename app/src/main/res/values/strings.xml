@@ -8,4 +8,7 @@
     <string name="navigation_story">Story</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navigation_home">Home</string>
+    <string name="image_of_weapon">Image of weapon</string>
+    <string name="navigate_back">Navigate back to item menu button</string>
+    <string name="item_header">Предметы</string>
 </resources>

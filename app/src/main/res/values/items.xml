@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weapon_tier_constr">Категория: %1$s</string>
+    <string name="weapon_weight_constr">Вес: %1$s</string>
+    <string name="weapon_source_constr">Как получить: %1$s</string>
+    <string name="weapon_effects_constr">Эффекты:\n%1$s</string>
+
+    <string name="weapon1_name">Аддан Дейт</string>
+    <string name="weapon1_tier">Реликт</string>
+    <string name="weapon1_weight">1.18</string>
+    <string name="weapon1_source">Геральт может найти этот меч на останках Жальницы в ходе квеста «Заказ: Заботы Могильщика», на останках реданского солдата в пещере к северу от Новиграда или в древней гробнице на Ард Скеллиге, а также купить у эльфа-торговца в лагере скоя\'таэлей неподалеку от Оксенфурта.</string>
+    <string name="weapon1_effects">Мощь Аарда +3–10%\nМощь Аксия +3–10%Дополнительный урон при крит. ударе +10–24%\nШанс критического удара +1–4%\nШанс вызвать заморозку +1%</string>
+    
+    <string name="weapon2_name">Ан\'Ферхе</string>
+    <string name="weapon2_tier">Магический</string>
+    <string name="weapon2_weight">1.81</string>
+    <string name="weapon2_source">Существует 5 вариаций этого оружия. Геральт может найти четыре из
+        них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать
+        с помощью кузнеца по соответствующему чертежу.</string>
+    <string name="weapon2_effects">Дополнительный урон при критическом ударе +50%</string>
+
+    <string name="weapon3_name">Анафема</string>
+    <string name="weapon3_tier">Реликт</string>
+    <string name="weapon3_weight">1.68</string>
+    <string name="weapon3_source">Геральт может случаным образом найти этот меч во время своих странствий, например, взяв с тела королевской виверны в ходе квеста «Заказ: Призрак тракта».</string>
+    <string name="weapon3_effects">Мощь Аарда +5–15%\nМощь Квена +5–15%\nДополнительный урон при крит. ударе +5–21%\nМодификатор шанса вызвать горение +10%</string>
+
+    <string name="weapon4_name">Ангивар</string>
+    <string name="weapon4_tier">Реликт</string>
+    <string name="weapon4_weight">3.16</string>
+    <string name="weapon4_source">Геральт может найти этот меч во время странствий, например,
+        Сокровищах под охраной западнее Рощи Олены в Велене.</string>
+    <string name="weapon4_effects">Нет</string>
+
+    <string name="weapon5_name">Арбалет</string>
+    <string name="weapon5_tier">Обычный</string>
+    <string name="weapon5_weight">0.77</string>
+    <string name="weapon5_source">Геральт может найти этот меч во время странствий, например, Сокровищах под охраной западнее Рощи Олены в Велене.</string>
+    <string name="weapon5_effects">Сила атаки +101%</string>
+
+    <string name="weapon6_name">Арбалет Геральта из Ривии</string>
+    <string name="weapon6_tier">Магический</string>
+    <string name="weapon6_weight">0.77</string>
+    <string name="weapon6_source">Геральт может получить этот арбалет в награду за победу в состязании на меткость в ходе квеста «Песнь рыцарского сердца», если решит выступать под именем сэра Геральта из Ривии.</string>
+    <string name="weapon6_effects">Сила атаки +300%</string>
+
+    <string name="weapon7_name">Арбалет Равикса из Черторога</string>
+    <string name="weapon7_tier">Магический</string>
+    <string name="weapon7_weight">0.77</string>
+    <string name="weapon7_source">Геральт из Ривии может получить этот арбалет в награду за победу в состязании на меткость в ходе квеста «Песнь рыцарского сердца», если решает выступать под именем сэра Равикса из Черторога.</string>
+    <string name="weapon7_effects">Сила атаки +300%</string>
+
+    <string name="weapon8_name">Арбалет Школы Кота</string>
+    <string name="weapon8_tier">Из комплекта</string>
+    <string name="weapon8_weight">1.68</string>
+    <string name="weapon8_source">Это оружие нельзя купить, найти или получить. Его можно только изготовить у кузнеца-оружейника рангом не ниже подмастерья по найденному чертежу, если имеются все необходимые компоненты. Чертёж можно найти, выполняя квест «Ведьмачьи древности: снаряжение Школы Кота».</string>
+    <string name="weapon8_effects">Пробитие доспеха +10\n
+Сила атаки +225%\n
+Получение адреналина +1%\n
+Шанс критического удара +2%\n
+Дополнительный опыт за смертельный удар по чудовищу +15%</string>
+
+    <string name="weapon9_name">Банши</string>
+    <string name="weapon9_tier">Реликт</string>
+    <string name="weapon9_weight">0.77</string>
+    <string name="weapon9_source">Существует 2 версии этого меча. Одну из них Геральт может найти в ходе странствий, например, в сундуке к югу от деревни Аринбьорн на Ард Скеллиге. Другую он может только изготовить по соответствующему чертежу.</string>
+    <string name="weapon9_effects">Урон холодом +10\n
+Пробитие доспеха +50\n
+Мощь Аарда +20%</string>
+
+    <string name="weapon10_name">Бельхавенский клинок</string>
+    <string name="weapon10_tier">Реликт</string>
+    <string name="weapon10_weight">2.41</string>
+    <string name="weapon10_source">Этот меч нельзя найти или получить. Его можно только изготовить у кузнеца по соответствующему чертежу, который находится в одном из сундуков на юге Туссента.</string>
+    <string name="weapon10_effects">Мощь Аарда +30%\n
+Дополнительный урон при крит. ударе +100%\n
+Шанс критического удара +15%\n
+Шанс вызвать отравление +15%\n
+Дополнительный опыт за смертельный удар по человеку +5%</string>
+
+    <string name="weapon11_name">Блёд Аэдд</string>
+    <string name="weapon11_tier">Реликт</string>
+    <string name="weapon11_weight">2.79</string>
+    <string name="weapon11_source">Геральт может взять этот меч с останков Сарасти в ходе квеста «Заказ: Тайна деревни Стёжки» или найти в ходе странствий.</string>
+    <string name="weapon11_effects">Мощь Ирдена +4-9%\n
+Дополнительный урон при крит. ударе +3-9%\n
+Шанс вызвать кровотечение +6-13%\n
+Доп. опыт за смертельный удар по человеку +1-2%</string>
+
+    <string name="weapon12_name">Ведьмачий стальной меч</string>
+    <string name="weapon12_tier">Обычный</string>
+    <string name="weapon12_weight">1.74</string>
+    <string name="weapon12_source">Геральт изначально имеет этот меч как базовое снаряжение.</string>
+    <string name="weapon12_effects">Пробитие доспеха +25</string>
+
+    <string name="weapon13_name">Веленский длинный меч</string>
+    <string name="weapon13_tier">Магический</string>
+    <string name="weapon13_weight">1.53</string>
+    <string name="weapon13_source">Существует 3 вариации этого оружия. Геральт может найти две из них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать с помощью кузнеца по соответствующему чертежу.</string>
+    <string name="weapon13_effects">Нет</string>
+
+    <string name="weapon14_name">Веленский топор</string>
+    <string name="weapon14_tier">Обычный</string>
+    <string name="weapon14_weight">1.01</string>
+    <string name="weapon14_source">Существует 3 версии этого топора. Геральт может найти их в ходе странствий или купить у различных торговцев.</string>
+    <string name="weapon14_effects">Нет</string>
+
+    <string name="weapon15_name">Волк</string>
+    <string name="weapon15_tier">Реликт</string>
+    <string name="weapon15_weight">1.96</string>
+    <string name="weapon15_source">Геральт может найти этот меч в ходе странствий, например, в ходе квеста «Распутывая клубок» у Лунда.</string>
+    <string name="weapon15_effects">Пробитие доспеха +26-71\n
+Шанс вызвать кровотечение +4%\n
+Дополнительное золото +2-4%</string>
+
+    <string name="weapon16_name">Гав\'кар</string>
+    <string name="weapon16_tier">Реликт</string>
+    <string name="weapon16_weight">3.96</string>
+    <string name="weapon16_source">Геральт получает этот меч после победы над Эредином.</string>
+    <string name="weapon16_effects">Шанс критического удара +5-11%\n
+Шанс выбить из равновесия +11%\n
+Доп. опыт за смертельный удар по чудовищу +2-3%</string>
+
+    <string name="weapon17_name">Гарваль</string>
+    <string name="weapon17_tier">Реликт</string>
+    <string name="weapon17_weight">3.31</string>
+    <string name="weapon17_source">Геральт может найти этот меч в ходе квеста «Несчастный случай» или в ходе квеста «Неуслышанная просьба ». Также он может купить его в лесном лагере скоя’таэлей у эльфа-купца.</string>
+    <string name="weapon17_effects">Мощь Игни +5-12%\n
+Шанс вызвать горение +9%</string>
+
+    <string name="weapon18_name">Гарпия</string>
+    <string name="weapon18_tier">Реликт</string>
+    <string name="weapon18_weight">2.86</string>
+    <string name="weapon18_source">Существует 2 вариации этого меча. Геральт может найти одну из них в ходе странствий или купить у различных торговцев. Другую он может только сделать с помощью кузнеца, используя соответствующий чертеж.</string>
+    <string name="weapon18_effects">Шанс вызвать кровотечение +10%</string>
+
+    <string name="weapon19_name">Гвен\'нель</string>
+    <string name="weapon19_tier">Магический</string>
+    <string name="weapon19_weight">1.53</string>
+    <string name="weapon19_source">Существует 4 вариации этого меча. Геральт может найти три из них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать с помощью кузнеца используя соответствующий чертеж.</string>
+    <string name="weapon19_effects">Нет</string>
+
+    <string name="weapon20_name">Гвестог</string>
+    <string name="weapon20_tier">Реликт</string>
+    <string name="weapon20_weight">2.68</string>
+    <string name="weapon20_source">Геральт может найти этот меч в ходе странствий, например на останках командира охотника за колдуньями в ходе квеста «Сейчас или никогда» или получить в награду после квеста «Кулаки ярости: Скеллиге».</string>
+    <string name="weapon20_effects">Мощь Квена +2-8%\n
+Шанс вызвать заморозку +2%\n
+Модификатор шанса отрубить конечность +4-9%</string>
+
+    <string name="weapon21_name">Гвихир</string>
+    <string name="weapon21_tier">Реликт</string>
+    <string name="weapon21_weight">2.34</string>
+    <string name="weapon21_source">Геральт изначально имеет этот меч как базовое снаряжение.</string>
+    <string name="weapon21_effects">Пробитие доспеха +64-95\n
+Мощь Ирдена +7-10%\n
+Дополнительный урон при крит. ударе +7-10%\n
+Шанс вызвать кровотечение +6%</string>
+
+    <string name="weapon22_name">Девин</string>
+    <string name="weapon22_tier">Реликт</string>
+    <string name="weapon22_weight">1.81</string>
+    <string name="weapon22_source">Геральт может получить этот меч в ходе квеста «Заказ: Бестия», взяв с тела убитого Хагубмана близ деревни Ларвик на Хиндарсфьялле или найти в ходе странствий.</string>
+    <string name="weapon22_effects">Пробитие доспеха +12-46\n
+Мощь Аарда +6-10%\n
+Шанс вызвать оглушение +7%\n
+Доп. опыт за смертельный удар по человеку +1-3%</string>
+
+    <string name="weapon23_name">Дейра</string>
+    <string name="weapon23_tier">Реликт</string>
+    <string name="weapon23_weight">2.01</string>
+    <string name="weapon23_source">Геральт может взять этот меч в одном из сундуков у обломков Атропоса, на борту которого он впервые пребывает на Скеллиге.</string>
+    <string name="weapon23_effects">Дополнительный урон при крит. ударе +5-13%\n
+Шанс вызвать оглушение +1%\n
+Дополнительное золото +2-5%</string>
+
+    <string name="weapon24_name">Дергдейт</string>
+    <string name="weapon24_tier">Реликт</string>
+    <string name="weapon24_weight">3.16</string>
+    <string name="weapon24_source">Геральт может найти этот меч в ходе странствий, например на останках Гэля в ходе квеста «Заказ: Оксенфуртский кровопийца» или на останках Губерт Рейка в ходе квеста «Смертные грехи».</string>
+    <string name="weapon24_effects">Мощь Аарда +2-20%\n
+Мощь Ирдена +2-20%\n
+Мощь Квена +2-20%\n
+Доп. опыт за смертельный удар по человеку +3-5%</string>
+
+    <string name="weapon25_name">Деревянный меч</string>
+    <string name="weapon25_tier">Обычный</string>
+    <string name="weapon25_weight">0.28</string>
+    <string name="weapon25_source">Деревянный меч используется в квестах, где не нужно убивать или наносить урон противнику. Он нужен во время спарринга с Розой и во время ограбления аукционного дома Братьев Борсоди.</string>
+    <string name="weapon25_effects">Ударный урон 20–24</string>
+
+    <string name="weapon26_name">Дрын из забора</string>
+    <string name="weapon26_tier">Обычный</string>
+    <string name="weapon26_weight">0.01</string>
+    <string name="weapon26_source">Витольд в теле Геральта использует вырванную из частокола доску, чтобы подраться с братьями девушки, которую он попытался обворожить, поспорив с Шани на свадьбе.</string>
+    <string name="weapon26_effects">Ударный урон 20–24</string>
+
+    <string name="weapon27_name">Забытый меч вранов</string>
+    <string name="weapon27_tier">Реликт</string>
+    <string name="weapon27_weight">3.43</string>
+    <string name="weapon27_source">Геральт может взять этот меч с останков Лешачихи в ходе квеста «Заказ: Лешачиха» или найти в ходе странствий, например в сундуке на Лысой горе.</string>
+    <string name="weapon27_effects">Дополнительный урон при крит. ударе +10%\n
+Шанс критического удара +4-5%\n
+Шанса вызвать оглушение +10%</string>
+
+    <string name="weapon28_name">Зираэль</string>
+    <string name="weapon28_tier">Реликт</string>
+    <string name="weapon28_weight">2.26</string>
+    <string name="weapon28_source">Геральт может получить этот созданный мастером Ортом на заказ уникальный серебрянный меч в ходе квеста «Что-то кончается, что-то начинается», если Цири пошла по ведьмачьему пути. Впоследствии Белый Волк отдает его девушке, которая дожидается его в корчме Белого Сада.</string>
+    <string name="weapon28_effects">Дополнительный урон при крит. ударе +25%\n
+Шанс критического удара +5%\m
+Доп. опыт за смертельный урон по чудовищу +5%</string>
+
+    <string name="weapon29_name">Инис</string>
+    <string name="weapon29_tier">Реликт</string>
+    <string name="weapon29_weight">2.79</string>
+    <string name="weapon29_source">Геральт может найти этот меч в ходе квеста «Жемчуга побережья».</string>
+    <string name="weapon29_effects">Пробитие доспеха +30-41\n
+Шанс критического удара +2-3%\n
+Шанс вызвать отравление +3%\n
+Доп. опыт за смертельный удар по человеку +1-2%</string>
+
+    <string name="weapon30_name">Карабелла</string>
+    <string name="weapon30_tier">Реликт</string>
+    <string name="weapon30_weight">2.13</string>
+    <string name="weapon30_source">Геральт может взять этот меч с останков Ignis Fatuus в ходе квеста «Заказ: Чудище с болот» или найти в ходе странствий.</string>
+    <string name="weapon30_effects">Шанс критического удара +8-13%\n
+Шанс вызвать заморозку +2%</string>
+
+    <string name="weapon31_name">Клинок Зимы</string>
+    <string name="weapon31_tier">Реликт</string>
+    <string name="weapon31_weight">2.56</string>
+    <string name="weapon31_source">После того, как в ходе квеста «Va faill, Elaine» Йеннифер и ведьмакам удается расколдовать Уму, который превращается в эльфского знающего Аваллак\'ха, Геральт отправляется за Цири на Остров Туманов. Понимая, что ему предстоит тяжелый бой с Дикой Охотой, Белый Волк посещает своих друзей и просит их о помощи. В ходе квеста «Братья по оружию. Скеллиге» Геральт прибывает в Каэр Трольде к Краху ан Крайту, который не может перебросить войска к Каэр Морхену и оставить острова беззащитными, однако же дарит ведьмаку свой родовой меч — Клинок Зимы. Геральт может как поблагодарить Краха, так и отказаться принять меч, но Ярл Скеллиге будет настаивать и все равно отдаст клинок ведьмаку.</string>
+    <string name="weapon31_effects">Пробитие доспеха +40\n
+Дополнительный урон при крит. ударе +55%\n
+Шанс вызвать заморозку +10%</string>
+
+    <string name="weapon32_name">Клинок из Виковаро</string>
+    <string name="weapon32_tier">Обычный</string>
+    <string name="weapon32_weight">1.56</string>
+    <string name="weapon32_source">Существует 3 вариации этого меча. Геральт может найти их в ходе странствий или купить у различных торговцев.</string>
+    <string name="weapon32_effects">Пробитие доспехов +37\n
+Дополнительный урон при крит. удара +9%</string>
+
+    <string name="weapon33_name">Клинок Фарамона</string>
+    <string name="weapon33_tier">Реликт</string>
+    <string name="weapon33_weight">2.81</string>
+    <string name="weapon33_source">Этот меч нельзя найти или получить. Его можно только изготовить у кузнеца по соответствующему чертежу, если имеются все необходимые компоненты.</string>
+    <string name="weapon33_effects">Мощь Аарда +26%\n
+Дополнительный урон при крит. ударе +85%\n
+Шанс критического удара +11%\n
+Шанс вызвать отравление +15%\n
+Доп. опыт за смертельный удар по человеку +5%</string>
+
+    <string name="weapon34_name">Кэрм</string>
+    <string name="weapon34_tier">Реликт</string>
+    <string name="weapon34_weight">3.26</string>
+    <string name="weapon34_source">Геральт может случайным образом найти этот меч в ходе своих странствий, например, в кургане под отметкой Сокровища под охраной близ деревни Бландаре на Скеллиге.</string>
+    <string name="weapon34_effects">Урон огнем +5-10\n
+Мощь Игни +6-12%\n
+Модификатор шанса отрубить конечность +5-10%</string>
+
+    <string name="weapon35_name">Лазурный гнев</string>
+    <string name="weapon35_tier">Реликт</string>
+    <string name="weapon35_weight">2.26</string>
+    <string name="weapon35_source">Геральт может получить этот меч в ходе квеста «Заказ: Таинственные следы», взяв с останков черта Ревуна.</string>
+    <string name="weapon35_effects">Пробитие доспеха +60-110%\n
+Шанс вызвать оглушение +12%\n
+Доп. опыт за смертельный удар по чудовищу +1-3%\n
+Дополнительное золото +1-3%</string>
+
+    <string name="weapon36_name">Лопата Ключника</string>
+    <string name="weapon36_tier">Реликт</string>
+    <string name="weapon36_weight">4.01</string>
+    <string name="weapon36_source">Геральт из Ривии может получить это оружие, сняв с тела Ключника, предварительно победив его в ходе квеста «И жили они долго и счастливо».</string>
+    <string name="weapon36_effects">10% от нанесенного урона возвращается в виде здоровья, исцеляя обладателя оружия</string>
+
+    <string name="weapon37_name">Маленькая дубинка</string>
+    <string name="weapon37_tier">Обычный </string>
+    <string name="weapon37_weight">0.56</string>
+    <string name="weapon37_source">Геральт может купить дубинку у различных торговцев и кузнецов, снять с трупов бандитов, которые часто вооружены этим оружием, или просто найти в сундуках.</string>
+    <string name="weapon37_effects">Ударный урон +17-36</string>
+
+    <string name="weapon38_name">Мелтих</string>
+    <string name="weapon38_tier">Магический</string>
+    <string name="weapon38_weight">1.76</string>
+    <string name="weapon38_source">Существует 3 вариации этого меча. Геральт может найти две из них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать с помощью кузнеца используя соответствующий чертеж.</string>
+    <string name="weapon38_effects">Шанс критического удара +10%</string>
+
+    <string name="weapon39_name">Меч воина Дикой Охоты</string>
+    <string name="weapon39_tier">Обычный</string>
+    <string name="weapon39_weight">2.11</string>
+    <string name="weapon39_source">Существует 3 вариации этого меча. Геральт может найти их в ходе странствий. Мастерскую вариацию этого меча можно взять с тела Нитраля.</string>
+    <string name="weapon39_effects">Дополнительный урон при критическом ударе +25%\n
+Шанс вызывать заморозку +1%</string>
+
+    <string name="weapon40_name">Меч Геральта из Ривии</string>
+    <string name="weapon40_tier">Магический</string>
+    <string name="weapon40_weight">2.72</string>
+    <string name="weapon40_source">Геральт может получить этот меч, если в ходе квеста «Песнь рыцарского сердца» решит выступать на турнире под именем сэра Геральта из Ривии и победит всех опонентов во всех дисциплинах.</string>
+    <string name="weapon40_effects">Пробитие доспеха +150%\n
+Дополнительный урон при крит. ударе +50%\n
+Шанс критического удара +15%</string>
+
+    <string name="weapon41_name">Меч Марибора</string>
+    <string name="weapon41_tier">Магический</string>
+    <string name="weapon41_weight">1.56</string>
+    <string name="weapon41_source">Существует 4 вариации этого меча. Геральт может найти два из них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать с помощью кузнеца по соответствующему чертежу.</string>
+    <string name="weapon41_effects">Нет</string>
+
+    <string name="weapon42_name">Меч принцессы Ксентии</string>
+    <string name="weapon42_tier">Реликт</string>
+    <string name="weapon42_weight">1.74</string>
+    <string name="weapon42_source">Геральт может найти этот меч в ходе странствий, например в казино Ублюдка Младшего и на территории замка Вроницы.</string>
+    <string name="weapon42_effects">Мощь Игни +3%\n
+Мощь Аксия +3%\n
+Шанс выбить из равновесия +8%\n
+Модификатор шанса отрубить конечность.</string>
+
+    <string name="weapon43_name">Надежда</string>
+    <string name="weapon43_tier">Реликт</string>
+    <string name="weapon43_weight">3.86</string>
+    <string name="weapon43_source">Геральт может найти этот меч в ходе странствий.</string>
+    <string name="weapon43_effects">Мощь Игни +17%\n
+Модификатор шанса отрубить конечность +8%\n
+Доп. опыт за смертельный удар по человеку +4%</string>
+
+    <string name="weapon44_name">Негоциатор</string>
+    <string name="weapon44_tier">Реликт</string>
+    <string name="weapon44_weight">3.04</string>
+    <string name="weapon44_source">Существует 2 версии этого меча. Одну из них Геральт может случайным образом найти во время своих странствий, например, в каналах Оксенфурта в ходе квеста «Первые ростки зла», причем урон и характеристики меча будут зависеть от уровня ведьмака. Другую он может только изготовить у кузнеца по соответствующему чертежу.</string>
+    <string name="weapon44_effects">+50 к пробитию доспеха\n
++15% шанс критического удара\n
++10% шанс вызвать оглушение</string>
+
+    <string name="weapon45_name">Нильфгаардский арбалет</string>
+    <string name="weapon45_tier">Предмет мастера</string>
+    <string name="weapon45_weight">1.08</string>
+    <string name="weapon45_source">Геральт может приобрести этот арбалет вместе со всем Нильфгаардским комплектом у квартирмейстера во Вроницах при условии, что установлены бесплатные дополнения «Nilfgaardian Armor Set» и «Elite Crossbow set».</string>
+    <string name="weapon45_effects">Сила атаки +125%</string>
+
+    <string name="weapon46_name">Нильфгаардский длинный меч</string>
+    <string name="weapon46_tier">Магический</string>
+    <string name="weapon46_weight">3.11</string>
+    <string name="weapon46_source">Существует 2 вариации этого оружия. Геральт может найти одну из них в ходе странствий или купить у различных торговцев. Последнюю он может только сделать с помощью кузнеца по соответствующему чертежу.</string>
+    <string name="weapon46_effects">Нет</string>
+
+    <string name="weapon47_name">Нэвд Сид</string>
+    <string name="weapon47_tier">Реликт</string>
+    <string name="weapon47_weight">2.11</string>
+    <string name="weapon47_source">Геральт может найти этот меч в ходе странствий, например в ходе квеста «За честь и славу», а также в сундуке в Каэр Гелене.</string>
+    <string name="weapon47_effects">Мощи Игни +8-13%\n
+Мощи Ирдена +8-13%\n
+Шанс выбить из равновесия +10%</string>
+
+    <string name="weapon48_name">Объятья проклятого</string>
+    <string name="weapon48_tier">Реликт</string>
+    <string name="weapon48_weight">1.74</string>
+    <string name="weapon48_source">Геральт может найти этот меч в ходе странствий, например, близ Сторожевой башни в Долине Каэр Морхена в сундуке, который охраняет леший.</string>
+    <string name="weapon48_effects">Мощь Квена +2-10%\n
+Мощь Аксия +3-20%\n
+Шанс вызвать заморозку +13%\n
+Модификатор шанса отрубить конечность +2-10%</string>
+
+    <string name="weapon49_name">Огнерожденный</string>
+    <string name="weapon49_tier">Магический</string>
+    <string name="weapon49_weight">1.56</string>
+    <string name="weapon49_source">Геральт может получить этот меч в ходе квеста «Вечный покой» в качестве награды от Трентина по поручению Луи де Корентена, если ведьмак решает «переселить» из склепа урну с прахом его жены, Марго.</string>
+    <string name="weapon49_effects">Пробитие доспеха +75-150\n
+Дополнительный урон при крит. ударе +50%\n
+Шанс вызвать кровотечение +5%</string>
+
+    <string name="weapon50_name">Палица</string>
+    <string name="weapon50_tier">Обычный</string>
+    <string name="weapon50_weight">1.76</string>
+    <string name="weapon50_source">Геральт может найти это оружие в ходе странствий или купить у различных торговцев.\nЕй часто вооружены разбойники и мародеры, а также стражники клана Друммонд, с которыми ведьмак может сразиться в ходе квеста «Солнечный камень».</string>
+    <string name="weapon50_effects">Ударный урон +11-30
+</string>
+
+    <string name="weapon51_name">Противник</string>
+    <string name="weapon51_tier">Обычный</string>
+    <string name="weapon51_weight">1.56</string>
+    <string name="weapon51_source">Существует 3 вариации этого меча. Геральт может найти их в ходе странствий или купить у различных торговцев.</string>
+    <string name="weapon51_effects">Дополнительный урон при крит. ударе +50%</string>
+
+
+</resources>
