@@ -28,7 +28,7 @@ import java.util.Objects;
 public class Builds extends Fragment {
     FragmentBuildsBinding binding;
 
-    String[] schools = { "Школа Волка", "Школа Кота", "Школа Медведя", "Школа Мантикоры", "Школа Змеи"};
+    String[] schools = { "Школа Волка", "Школа Кота", "Школа Медведя", "Школа Грифона"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -40,10 +40,13 @@ public class Builds extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Spinner spinner = view.findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter(getActivity(), R.layout.custom_spinner, schools);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.custom_spinner, schools);
         adapter.setDropDownViewResource(R.layout.item_spinner);
         spinner.setAdapter(adapter);
         ConstraintLayout wolf = view.findViewById(R.id.wolf);
+        ConstraintLayout cat = view.findViewById(R.id.cat);
+        ConstraintLayout bear = view.findViewById(R.id.bear);
+        ConstraintLayout griffin = view.findViewById(R.id.griffin);
         //layout.setVisibility(View.INVISIBLE);
         //view(scrollView);
         AdapterView.OnItemSelectedListener itemSelectedListener = new AdapterView.OnItemSelectedListener() {
@@ -52,16 +55,37 @@ public class Builds extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 // Получаем выбранный объект
                 String item = (String)parent.getItemAtPosition(position);
-                if (item.equals("Школа Волка"))
+                if (item.equals("Школа Волка")) {
+                    cat.setVisibility(View.INVISIBLE);
+                    bear.setVisibility(View.INVISIBLE);
+                    griffin.setVisibility(View.INVISIBLE);
                     wolf.setVisibility(View.VISIBLE);
-                else if (item.equals("Школа Кота"))
+
+                }
+                else if (item.equals("Школа Кота")) {
                     wolf.setVisibility(View.INVISIBLE);
-                else if (item.equals("Школа Медведя"))
+                    bear.setVisibility(View.INVISIBLE);
+                    griffin.setVisibility(View.INVISIBLE);
+                    cat.setVisibility(View.VISIBLE);
+                }
+                else if (item.equals("Школа Медведя")) {
                     wolf.setVisibility(View.INVISIBLE);
-                else if (item.equals("Школа Мантикоры"))
+                    cat.setVisibility(View.INVISIBLE);
+                    griffin.setVisibility(View.INVISIBLE);
+                    bear.setVisibility(View.VISIBLE);
+                }
+                else if (item.equals("Школа Грифона")) {
                     wolf.setVisibility(View.INVISIBLE);
-                else if (item.equals("Школа Змеи"))
+                    cat.setVisibility(View.INVISIBLE);
+                    bear.setVisibility(View.INVISIBLE);
+                    griffin.setVisibility(View.VISIBLE);
+                }
+                else if (item.equals("Школа Змеи")) {
                     wolf.setVisibility(View.INVISIBLE);
+                    cat.setVisibility(View.INVISIBLE);
+                    bear.setVisibility(View.INVISIBLE);
+                    griffin.setVisibility(View.INVISIBLE);
+                }
             }
 
             @Override
