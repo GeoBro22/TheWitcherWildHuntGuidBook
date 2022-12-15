@@ -16,9 +16,6 @@ import com.example.thewitcherwildhuntguidbook.data.Item;
 import java.util.ArrayList;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
-    private static final int ITEM_VIEW_TYPE_HEADER = 0;
-    private static final int ITEM_VIEW_TYPE_ITEM = 1;
-
     private final ArrayList<Item> itemList;
     ItemClickListener itemOnClickListener;
     Context context;
@@ -33,34 +30,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
         this.context = context;
     }
 
-    public boolean isHeader(int position) {
-        return position == 0;
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        return isHeader(position) ? ITEM_VIEW_TYPE_HEADER : ITEM_VIEW_TYPE_ITEM;
-    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        int resource;
-        if (viewType == ITEM_VIEW_TYPE_HEADER) {
-            resource = R.layout.item_header;
-        } else {
-            resource = R.layout.weapon_card;
-        }
-
-        View view = LayoutInflater.from(parent.getContext()).inflate(resource, parent, false);
-        return new ViewHolder(view, viewType, itemOnClickListener);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.weapon_card, parent, false);
+        return new ViewHolder(view, itemOnClickListener);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Item item = itemList.get(position);
 
-        if (position == ITEM_VIEW_TYPE_HEADER) return;
         holder.imageView.setImageResource(item.getWeaponResource());
         holder.name.setText(item.getName());
         holder.tier.setText(context.getResources().getString(R.string.weapon_tier_constr, item.getTier()));
@@ -72,28 +52,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
         return itemList.size();
     }
 
-    public static class HeaderHolder extends RecyclerView.ViewHolder {
-
-        public HeaderHolder(@NonNull View itemView) {
-            super(itemView);
-        }
-    }
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         final ImageView imageView;
         final TextView name;
         final TextView tier;
         final TextView weight;
 
-        public ViewHolder(@NonNull View itemView, int viewType, ItemClickListener itemClickListener) {
+        public ViewHolder(@NonNull View itemView, ItemClickListener itemClickListener) {
             super(itemView);
-            if (viewType == ItemAdapter.ITEM_VIEW_TYPE_HEADER) {
-                imageView = null;
-                name = null;
-                this.tier = null;
-                weight = null;
-                return;
-            }
             imageView = itemView.findViewById(R.id.weapon_image);
             name = itemView.findViewById(R.id.weapon_name);
             tier = itemView.findViewById(R.id.weapon_tier);
@@ -101,7 +67,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
 
             itemView.setOnClickListener(v -> {
                 if (itemClickListener != null) {
-                    int pos = getAbsoluteAdapterPosition();
+                    int pos = getBindingAdapterPosition();
 
                     if (pos != RecyclerView.NO_POSITION){
                         itemClickListener.onClick(pos);
