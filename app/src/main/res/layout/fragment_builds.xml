@@ -50,6 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерский доспех Школы Волка\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -133,6 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские Сапоги Школы Волка\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -219,6 +221,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские штаны Школы Волка\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -300,6 +303,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -382,6 +386,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -412,8 +417,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Необходимые навыки"
+
                 android:textAlignment="center"
                 app:layout_constraintBottom_toTopOf="@+id/image_wolf_skills"
                 tools:layout_editor_absoluteX="20dp" />
@@ -449,6 +455,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские перчатки Школы Волка\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -561,6 +568,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерский доспех Школы Кота\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -569,7 +577,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Получение адреналина     +35%"
+                    android:text="Получение адреналина     +25%"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="18sp" />
 
@@ -644,6 +652,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские Сапоги Школы Кота\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -730,6 +739,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские штаны Школы Кота\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -811,6 +821,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -893,6 +904,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -923,7 +935,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Необходимые навыки"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toTopOf="@+id/image_cat_skills"
@@ -960,6 +972,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские перчатки Школы Кота\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1062,6 +1075,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерский доспех Школы Медведя\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1145,6 +1159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские Сапоги Школы Медведя\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1231,6 +1246,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские штаны Школы Медведя\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1312,6 +1328,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1394,6 +1411,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1461,6 +1479,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские перчатки Школы Медведя\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1558,6 +1577,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерский доспех Школы Грифона\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1641,6 +1661,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские Сапоги Школы Грифона\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1727,6 +1748,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские штаны Школы Грифона\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1808,6 +1830,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Стальной меч\nтуссентского рыцаря\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1890,6 +1913,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Серебряный\nмеч\nАрондит\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
@@ -1920,7 +1944,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Необходимые навыки"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toTopOf="@+id/image_griffin_skills"
@@ -1957,6 +1981,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Гроссмейстерские перчатки Школы Грифона\n"
+                    android:textStyle="bold"
                     android:textColor="@color/tier_magic_text"
                     android:textSize="19sp" />
 
