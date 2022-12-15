@@ -13,43 +13,33 @@ public class MapViewModel extends ViewModel {
     private MutableLiveData<Float> scale;
     private MutableLiveData<PointF> centerPosition;
 
-    public void setCenterPosition (PointF centerPosition){
-        this.centerPosition = new MutableLiveData<>(centerPosition);
-    }
-
     public MutableLiveData<PointF> getCenterPosition(){
+        if(centerPosition == null)
+            centerPosition = new MutableLiveData<>(new PointF(0f,0f));
         return centerPosition;
     }
 
-    public void setScale(float scale) {
-        this.scale = new MutableLiveData<>(scale);
-    }
-
     public MutableLiveData<Float> getScale(){
+        if(scale == null)
+            scale = new MutableLiveData<>(1f);
         return scale;
     }
 
-    public void setPositionX(float positionX) {
-        this.positionX = new MutableLiveData<>(positionX);
-    }
-
     public MutableLiveData<Float> getPositionX() {
+        if(positionX == null)
+            positionX = new MutableLiveData<>(0f);
         return positionX;
     }
 
-    public void setPositionY(float positionY) {
-        this.positionY = new MutableLiveData<>(positionY);
-    }
-
     public MutableLiveData<Float> getPositionY() {
+        if(positionY == null)
+            positionY = new MutableLiveData<>(0f);
         return positionY;
     }
 
-    public LiveData<Integer> getMapId(){
+    public MutableLiveData<Integer> getMapId(){
+        if(mapId == null)
+            mapId = new MutableLiveData<>(-1);
         return mapId;
-    }
-
-    public void setMapId(int mapId) {
-        this.mapId = new MutableLiveData<>(mapId);
     }
 }
