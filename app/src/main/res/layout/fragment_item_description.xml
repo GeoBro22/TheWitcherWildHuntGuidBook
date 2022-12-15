@@ -33,6 +33,7 @@
             android:textSize="24sp"
             android:textColor="@color/tier_magic_text"
             android:textStyle="bold"
+            android:layout_marginEnd="10dp"
 
             app:layout_constrainedWidth="true"
             app:layout_constraintTop_toTopOf="parent"
@@ -42,8 +43,8 @@
 
         <ImageView
             android:id="@+id/weapon_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
             android:contentDescription="@string/image_of_weapon"
 
             app:layout_constraintEnd_toEndOf="parent"
@@ -55,12 +56,14 @@
             android:id="@+id/weapon_tier"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textColor="@color/tier_magic_text"
             tools:text="@string/weapon1_tier"
+            android:layout_margin="5dp"
 
-
+            app:layout_constrainedWidth="true"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/weapon_image"
             app:layout_constraintBottom_toTopOf="@id/weapon_weight"/>
 
@@ -68,34 +71,44 @@
             android:id="@+id/weapon_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:textColor="@color/tier_magic_text"
-            tools:text="@string/weapon1_weight"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="5dp"
 
+            app:layout_constrainedWidth="true"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weapon_tier" />
+            app:layout_constraintTop_toBottomOf="@+id/weapon_tier"
+            tools:text="@string/weapon1_weight" />
 
         <TextView
             android:id="@+id/weapon_effects"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
             android:textColor="@color/tier_magic_text"
-            tools:text="@string/weapon1_effects"
+            android:textSize="20sp"
 
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weapon_weight" />
+            app:layout_constraintTop_toBottomOf="@+id/weapon_weight"
+            tools:text="@string/weapon1_effects" />
 
         <TextView
             android:id="@+id/weapon_source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_margin="5dp"
             android:textColor="@color/tier_magic_text"
-            tools:text="@string/weapon1_source"
+            android:textSize="20sp"
+            app:layout_constrainedWidth="true"
 
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weapon_effects" />
+            app:layout_constraintTop_toBottomOf="@+id/weapon_effects"
+            tools:text="@string/weapon1_source" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

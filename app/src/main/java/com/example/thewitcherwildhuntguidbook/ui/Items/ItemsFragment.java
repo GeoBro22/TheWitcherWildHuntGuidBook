@@ -53,6 +53,8 @@ public class ItemsFragment extends Fragment {
         });
 
         binding.recyclerView.setAdapter(itemAdapter);
+
+
     }
 
 }

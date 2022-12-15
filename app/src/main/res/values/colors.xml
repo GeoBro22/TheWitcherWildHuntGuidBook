@@ -4,6 +4,7 @@
     <color name="gray">#FF303030</color>
     <color name="white">#FFFFFFFF</color>
     <color name="tier_magic_text">#FFFCE7</color>
+    <color name="tier_magic_util">#ADA881</color>
     <color name="tier_magic">#544E39</color>
     <color name="black_overlay">#66000000</color>
     <color name="transparent">#00000000</color>
