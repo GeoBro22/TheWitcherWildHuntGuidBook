@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--sdsd-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40sp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Добро пожаловать в нашу скромную таверну путник!"
                 android:textAlignment="center"
                 android:textAllCaps="true"
@@ -39,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="320sp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Утомился от долгого пути, ведьмак?\nУстал от бесконечной борьбы? \nЧудовища не дают продохнуть? \nТогда ты по адресу.\nТебе очень повезло путник, ведь в этой таверне собрались самые прожённые суровой ведьмачьей жизнью подонки. Мы то уж тебя жизни научим... И путь укажем, и оружие подберём. Чувствуй себя как дома. \nПартейку в Гвинт? Или может по стакану отменной медовухи? Что-то ты неразговорчивый... Вот все вы ведьмаки такие. Звать то тебя хоть как? Ну, будем знакомы. \nСтало быть и нам представиться надобно..."
                 android:textAlignment="center"
                 android:textAllCaps="false" />
@@ -58,7 +59,7 @@
                 android:layout_height="70dp"
                 android:layout_marginLeft="230dp"
                 android:layout_marginTop="550sp"
-                android:src="@drawable/geo" />
+                android:src="@drawable/georgy" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -66,7 +67,7 @@
                 android:layout_height="70sp"
                 android:layout_marginTop="550sp"
                 android:layout_marginLeft="125dp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Наш летописец Кирилл" />
 
             <TextView
@@ -75,7 +76,7 @@
                 android:layout_height="70sp"
                 android:layout_marginTop="550sp"
                 android:layout_marginLeft="305dp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Наш оружейник Георгий" />
 
 
@@ -85,7 +86,7 @@
                 android:layout_height="70sp"
                 android:layout_marginTop="630sp"
                 android:layout_marginLeft="125dp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Наш картограф Ростислав" />
 
             <TextView
@@ -94,7 +95,7 @@
                 android:layout_height="70sp"
                 android:layout_marginTop="630sp"
                 android:layout_marginLeft="305dp"
-                android:fontFamily="@font/text_for_logo_home"
+                android:fontFamily="@font/text_for_logo_hom"
                 android:text="Наш кузнец Виктор" />
 
             <ImageView
