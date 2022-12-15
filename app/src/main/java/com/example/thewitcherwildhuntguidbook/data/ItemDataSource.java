@@ -7,6 +7,7 @@ import com.example.thewitcherwildhuntguidbook.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Class containing extended info about item
 public class ItemDataSource {
     final private Resources resources;
     //private ArrayList<Item> items;
